@@ -157,13 +157,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
-      <p style={paragraphStyles}>
-        Quer ser <code style={codeStyles}>avisado</code> quando o site estiver
-        pronto?{" "}
-        <span role='img' aria-label='Sunglasses smiley emoji'>
-          😎
-        </span>
-      </p>
+      <p style={paragraphStyles}>Página em desenvolvimento</p>
       <ul style={listStyles}>
         {/* <li style={docLinkStyle}>
           <a
@@ -176,71 +170,6 @@ const IndexPage = () => {
           </a>
         </li> */}
       </ul>
-      {msg ? (
-        <p style={success === "success" ? successHTMLstyle : errorHTMLstyle}>
-          {msg}
-        </p>
-      ) : null}
-      {success !== "success" ? (
-        <form
-          style={listItemStyles}
-          method='post'
-          id='mc-embedded-subscribe-form'
-          name='mc-embedded-subscribe-form'
-          className='validate'
-          target='_blank'
-          onSubmit={e => handleSubmit(e, email, honey)}
-          noValidate
-        >
-          <p className='hidden'>
-            <label>
-              Don’t fill this out if you’re human:{" "}
-              <input
-                name='bot-field'
-                onChange={e => handleHoneypotChange(e.target.value)}
-                value={honey}
-              />
-            </label>
-          </p>
-          <br />
-
-          <input
-            type='email'
-            name='EMAIL'
-            id='mce-EMAIL'
-            placeholder='seu@email.com (avise-me por e-mail)'
-            required
-            style={inputzim}
-            size='28'
-            onChange={e => handleEmailChange(e.target.value)}
-            value={email}
-          />
-          <br />
-          <label htmlFor='mce-EMAIL'>
-            <span style={smallzim}>Não enviamos spam :)</span>
-          </label>
-          <br />
-          <br />
-          {honey || email === "" ? null : (
-            <>
-              <button
-                type='submit'
-                style={inputzimButton}
-                name='subscribe'
-                id='mc-embedded-subscribe'
-                disabled={email ? false : true}
-              >
-                Alerta-me!
-              </button>
-            </>
-          )}
-        </form>
-      ) : (
-        <>
-          <br />
-        </>
-      )}
-
       <StaticImage src='../images/netlify.png' alt='Netlify' width={24} />
       <img
         alt='Gatsby G Logo'
