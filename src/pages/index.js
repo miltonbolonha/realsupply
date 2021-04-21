@@ -147,24 +147,25 @@ const IndexPage = () => {
 
   return (
     <main style={pageStyles}>
-      <small>3ª edição</small>
+      <small>Site em produção</small>
       <h1 style={headingStyles}>
-        Autismo Tech
+        Real Supply
         <br />
-        <span style={headingAccentStyles}>— 9 de abril, 18:30! </span>
+        <span style={headingAccentStyles}>— Em breve! </span>
         <br />
         <span role='img' aria-label='Party popper emojis'>
           🎉🎉🎉
         </span>
       </h1>
       <p style={paragraphStyles}>
-        Compartilhe, faça a <code style={codeStyles}>sua parte</code> !!!{" "}
+        Quer ser <code style={codeStyles}>avisado</code> quando o site estiver
+        pronto?{" "}
         <span role='img' aria-label='Sunglasses smiley emoji'>
           😎
         </span>
       </p>
       <ul style={listStyles}>
-        <li style={docLinkStyle}>
+        {/* <li style={docLinkStyle}>
           <a
             style={linkStyle}
             target='_blank'
@@ -173,7 +174,7 @@ const IndexPage = () => {
           >
             {docLink.text}
           </a>
-        </li>
+        </li> */}
       </ul>
       {msg ? (
         <p style={success === "success" ? successHTMLstyle : errorHTMLstyle}>
