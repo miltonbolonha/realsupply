@@ -1,0 +1,52 @@
+null {
+  z-index: 0;
+  undefined {
+    z-index: 1;
+    empty {
+      z-index: 2;
+    }
+  }
+}
+
+// Colors
+$system__color: #0052cc;
+$brand__color: #64fe0b;
+
+$cta__color: #eaff01;
+$additional__color: #00a28b;
+
+$gradient_000__color: #fff499;
+$gradient_200__color: #ffd600;
+$gradient_400__color: #ffa100;
+$gradient_600__color: #d65926;
+$gradient_800__color: #9e2942;
+$gradient_999__color: #3e215c;
+
+$brand_black__color: #0c1f3f;
+$brand_white__color: #fff499;
+$black__color: #1c1c1c;
+
+$grayscale_100__color: #fcfcfc;
+$grayscale_300__color: #e3e3e3;
+$grayscale_400__color: #d2d2d2;
+$grayscale_600__color: #a3a3a3;
+$grayscale_800__color: #7d7d7d;
+
+$success__color: #14ce52;
+$error__color: #d80909;
+
+$secondary_blue__color: #4b99ff;
+$secondary_light_blue__color: #d8e4ed;
+$secondary_pink__color: #e21f8c;
+$secondary_oh_my_eye__color: #ff3a65;
+$secondary_golden_rod__color: #e8922f;
+$secondary_wheat__color: #f2c9b5;
+$secondary_light_purple__color: #c3a8d5;
+$secondary_is_this_green__color: #3c7e9f;
+
+$light_brown__bgColor: #e8bb9e;
+$dark_brown__bgColor: #2f1a0c;
+
+.row_color__Additional {
+  background-color: $additional__color;
+}
