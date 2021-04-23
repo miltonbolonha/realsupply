@@ -8,55 +8,55 @@ const FooterMainMenu = ({ wrapperRef, isVisibleClass }) => (
 		<ul className="nav-footer-menus">
 			<li className="nav-footer-links">
 				<a className="nav-footer-main-link" href="/wiki/milteam">
-					MilTeam
+					Item footer
 				</a>
 			</li>
 			<li className="nav-footer-links">
 				<a className="nav-footer-main-link" href="/wiki/sistema-bolonha">
-					Sistema Bolonha 3.0
+					Item footer
 				</a>
 			</li>
 		</ul>
 
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/preparacao">
-					Preparação
+				<a className="nav-footer-main-link" href="/wiki/preparacao">
+					Item footer
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/conte-uma-historia">
-					Conte uma História
+				<a className="nav-footer-main-link" href="/wiki/conte-uma-historia">
+					Item footer
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/tom-aviso">
-					Tom Realista
+				<a className="nav-footer-main-link" href="/wiki/tom-aviso">
+					Item footer
 				</a>
 			</li>
 		</ul>
 		<ul className="nav-footer-menus">
 			<li className="nav-footer-links">
 				<a className="nav-footer-main-link" href="/wiki/home">
-					Manual de Campanha
+					Item footer
 				</a>
 			</li>
 			<li className="nav-footer-links">
 				<a className="nav-footer-main-link" href="/wiki/instrucoes-iniciais">
-					Instruções Iniciais
+					Item footer
 				</a>
 			</li>
 
 			<li className="nav-footer-links">
 				<a className="nav-footer-main-link" href="/wiki/panorama-telas">
-					Panorâma Geral e Telas
+					Item footer
 				</a>
 			</li>
 			<li className="nav-footer-links">
 				<a className="nav-footer-main-link" href="/wiki/arquivos-documentos">
-					Arquivos e Documentos
+					Item footer
 				</a>
 			</li>
 		</ul>

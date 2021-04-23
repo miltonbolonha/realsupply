@@ -114,7 +114,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 							</li>
 							<li className="footer-links">
 								<a href="/wiki/alesp" className="footer-link">
-									Alesp
+									Link
 								</a>
 							</li>
 							<li className="footer-links">
@@ -166,7 +166,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 									href="http://localhost:8000/manifesto/manifesto-versionado/"
 									className="cart-link"
 								>
-									Manifesto{` `}
+									Link{` `}
 								</a>
 							</strong>
 						</p>

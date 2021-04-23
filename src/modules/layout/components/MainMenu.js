@@ -4,58 +4,58 @@ const MainMenu = ({ wrapperRef, isVisibleClass }) => (
 	<nav ref={wrapperRef} className={' main-nav menu-state-' + isVisibleClass}>
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/rgb">
-					DDW
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/producao-audiovisual">
-					Estruturar
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/producao-audiovisual">
-					Escrever
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/producao-audiovisual">
-					Sequenciar (versionar)
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 		</ul>
 
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/rgb">
-					RGB
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/producao-audiovisual">
-					Produção Audiovisual
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/fornecedores">
-					Fornecedores
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/recursos-graficos">
-					Recursos Gráficos
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/meme">
-					Mesmerize
+				<a className="nav-main-link" href="#">
+					item 01
 					<br />- Meme
 					<br />- gif
 				</a>
@@ -64,44 +64,44 @@ const MainMenu = ({ wrapperRef, isVisibleClass }) => (
 
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/temas-causas">
-					Temas e Causas
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/criancas">
-					Crianças
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/educacao">
-					Educação 3.0
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 		</ul>
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/cmyk">
-					CMYK
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/impressos">
-					Impressos
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/adesivos">
-					Adesivos
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="/wiki/timbrado-docs">
-					Timbrados e Docs
+				<a className="nav-main-link" href="#">
+					item 01
 				</a>
 			</li>
 		</ul>
