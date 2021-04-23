@@ -1,4 +1,4 @@
-import { React, Img } from '../dependencies'
+import { React } from '../dependencies'
 
 import DarkMode from '../containers/darkmode'
 import MenuContainer from '../containers/MenuContainer'
@@ -40,7 +40,7 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 			</div>
 			<div className="header-columns">
 				<strong>
-					<a href="#" className="cart-link">
+					<a href="/" className="cart-link">
 						Roteiro
 					</a>
 				</strong>

@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import { React, PropTypes, useState } from '../dependencies'
-import { useStaticQuery, graphql } from 'gatsby'
+// import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from '../components/Header'
 

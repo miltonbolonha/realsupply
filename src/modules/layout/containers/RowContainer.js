@@ -2,7 +2,7 @@ import { React } from '../dependencies'
 
 import LayoutContext, { LayoutProvider } from '@Layout/services/LayoutContext'
 import Row from '../components/Row'
-import { Page__Settings } from '../config/'
+// import { Page__Settings } from '../config/'
 // import useSetLocation from '@tools/useSetLocation'
 
 const RowContainer = ({

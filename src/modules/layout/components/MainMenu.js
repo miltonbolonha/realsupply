@@ -4,25 +4,25 @@ const MainMenu = ({ wrapperRef, isVisibleClass }) => (
 	<nav ref={wrapperRef} className={' main-nav menu-state-' + isVisibleClass}>
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
@@ -30,31 +30,31 @@ const MainMenu = ({ wrapperRef, isVisibleClass }) => (
 
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 					<br />- Meme
 					<br />- gif
@@ -64,43 +64,43 @@ const MainMenu = ({ wrapperRef, isVisibleClass }) => (
 
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 		</ul>
 		<ul className="nav-menus">
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>
 
 			<li className="nav-links">
-				<a className="nav-main-link" href="#">
+				<a className="nav-main-link" href="/">
 					item 01
 				</a>
 			</li>

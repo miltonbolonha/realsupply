@@ -1,5 +1,5 @@
 import { React, useState } from '../dependencies'
-import { useStaticQuery, graphql } from 'gatsby'
+// import { useStaticQuery, graphql } from 'gatsby'
 
 import Footer from '../components/Footer'
 

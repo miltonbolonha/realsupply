@@ -1,5 +1,5 @@
 import { React } from '../dependencies'
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 import FooterMainMenuContainer from '../containers/FooterMainMenuContainer'
 
 const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
