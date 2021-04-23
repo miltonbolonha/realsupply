@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
 	siteMetadata: {
-		title: 'Autismo Tech Alert',
+		title: 'Real Supply',
 		description: `Project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
 		author: `@MiltonBolonha`,
 	},
