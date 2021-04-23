@@ -105,7 +105,7 @@ const IndexPage = (data) => {
 									<div className="box-img-title-desc">
 										{/* <img src="" alt="" className="box-img"/> */}
 										<h2 className="box-title">Title here</h2>
-										<p>loremmm</p>
+										<p>loremmms</p>
 									</div>
 									<div className="box-img-title-desc">
 										{/* <img src="" alt="" className="box-img"/> */}
