@@ -74,10 +74,10 @@ const IndexPage = (data) => {
 								<h2>Titulo 1</h2>
 								<h3>Titulo dois</h3>
 								{/* <img src="" alt=""/> */}
-								<h2>Titulo s1</h2>
+								<h2>Titulo 1</h2>
 								<h3>Titulo dois</h3>
 								{/* <img src="" alt=""/> */}
-								<h2>Titulo 12</h2>
+								<h2>Titulo 1</h2>
 								<h3>Titulo dois</h3>
 								{/* <img src="" alt=""/> */}
 								<h2>Titulo 1</h2>
