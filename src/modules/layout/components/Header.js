@@ -1,5 +1,5 @@
 import { React } from '../dependencies'
-
+import { FaBars } from 'react-icons/fa'
 import DarkMode from '../containers/darkmode'
 import MenuContainer from '../containers/MenuContainer'
 
@@ -13,22 +13,11 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 					onChange={handleRefState}
 				/>
 				<label htmlFor="check-toggle-icon" className="menu-wrapper">
-					<div className="toggle-icon">
-						<span className="bar"></span>
-						<span className="bar"></span>
-						<span className="bar"></span>
-						<span className="bar"></span>
+					<div className="menu-bar-icon">
+						<FaBars className="FaBars" />
 					</div>
 					<div className="icon-text desktop-only">
-						outro
-						{/* <Img
-              fixed={menuImg.childImageSharp.fixed}
-              width={menuImg.childImageSharp.fixed.width}
-              height={menuImg.childImageSharp.fixed.height}
-              alt="Develop with Gatsby"
-              title="Gatsby"
-            /> */}
-						{/* <strong>Ferramentas</strong> */}
+						<strong>Ferramentas</strong>
 					</div>
 				</label>
 			</div>
