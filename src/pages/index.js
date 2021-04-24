@@ -5,39 +5,15 @@ import Layout from '@Layout'
 // import AtomicBlock from "@AtomicBlock"
 
 const IndexPage = (data) => {
-	// const queryManifesto = useStaticQuery(graphql`
-	//   query ManifestoVersionado {
-	//     markdownRemark(
-	//       headings: {
-	//         elemMatch: {
-	//           value: { eq: "Primeiro Manifesto Político Versionado do Mundo" }
-	//         }
-	//       }
-	//     ) {
-	//       html
-	//       headings {
-	//         value
-	//       }
-	//       timeToRead
-	//       wordCount {
-	//         paragraphs
-	//         words
-	//         sentences
-	//       }
-	//       excerpt
-	//     }
-	//   }
-	// `)
-
 	return (
 		<Layout type="BODY">
 			<Layout type="HEADER" />
 			<Layout
 				type="ROW"
 				opt={{
-					// bgColor: "#0052cc",
+					bgColor: '#d352cc',
 					isBoxed: true,
-					classes: 'light-content',
+					classes: 'light-content wrapper-overflow',
 					alignTo: 'center',
 				}}
 			>
@@ -51,19 +27,6 @@ const IndexPage = (data) => {
         ></div> */}
 				<h1>Bem-vindo</h1>
 				<div className="body">
-					<header className="menu-header">
-						<div>img</div>
-						<div>
-							{' '}
-							<ul>
-								<li>Teste</li>
-								<li>Teste</li>
-								<li>Teste</li>
-								<li>Teste</li>
-								<li>Teste</li>
-							</ul>{' '}
-						</div>
-					</header>
 					<div className="container">
 						<div className="left-column">
 							<div>
@@ -141,7 +104,7 @@ const IndexPage = (data) => {
 								<div className="count-row"></div>
 							</div>
 							<div className="row-wrapper">
-								<div className="count-row"></div>
+								<div className="count-row">Fim aqui</div>
 							</div>
 						</div>
 					</div>

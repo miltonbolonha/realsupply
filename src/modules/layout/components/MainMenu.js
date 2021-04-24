@@ -56,8 +56,8 @@ const MainMenu = ({ wrapperRef, isVisibleClass }) => (
 			<li className="nav-links">
 				<a className="nav-main-link" href="/">
 					item 01
-					<br />- Meme
-					<br />- gif
+					<br />- Item
+					<br />- Item
 				</a>
 			</li>
 		</ul>

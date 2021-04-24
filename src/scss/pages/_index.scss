@@ -1,3 +1,17 @@
-body{
-  background: white;
+body {
+	background: white;
+
+	.wrapper-overflow {
+		// overflow-y: auto;
+		height: 100%;
+		// margin-top: 75px;
+		margin-bottom: 75px;
+		// position: fixed;
+		// top: 75px;
+		width: 100%;
+
+		.boxed-column-child {
+			background-color: blue;
+		}
+	}
 }
