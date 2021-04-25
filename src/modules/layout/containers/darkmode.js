@@ -4,7 +4,7 @@ import React from 'react'
 // import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 const darkMode = (darkCandleImg) => {
-	console.log(darkCandleImg)
+	// console.log(darkCandleImg)
 	return (
 		<>dark</>
 		// <ThemeToggler>

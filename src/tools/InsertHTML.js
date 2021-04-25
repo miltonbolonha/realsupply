@@ -95,8 +95,8 @@ const InsertHTML = ({ type, params, opt, children, bgOpt }) => {
 							</ul>
 						)
 					case 'divisor':
-						console.log('bgOpt.theme_colors')
-						console.log(elementClass)
+						// console.log('bgOpt.theme_colors')
+						// console.log(elementClass)
 						return (
 							<div
 								className={`${rowWidth} ${elementClass} align-to-${

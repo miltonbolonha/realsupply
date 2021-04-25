@@ -1,6 +1,6 @@
 import { React } from '../dependencies'
 import { FaAnchor } from 'react-icons/fa'
-import DarkMode from '../containers/darkmode'
+// import DarkMode from '../containers/darkmode'
 import MenuContainer from '../containers/MenuContainer'
 
 const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
@@ -33,7 +33,7 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 						Roteiro
 					</a>
 				</strong>
-				<DarkMode darkCandleImg={darkCandleImg} />
+				{/* <DarkMode darkCandleImg={darkCandleImg} /> */}
 			</div>
 		</div>
 

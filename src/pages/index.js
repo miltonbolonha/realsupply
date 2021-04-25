@@ -2,11 +2,11 @@
 import React from 'react'
 
 import Layout from '@Layout'
-import AtomicBlock from '@AtomicBlock'
+// import AtomicBlock from '@AtomicBlock'
 
 const IndexPage = (data) => {
 	return (
-		<Layout type="BODY">
+		<Layout type="BODY" opt={{ titleSeo: 'homerzim' }}>
 			<Layout type="HEADER" />
 			<Layout
 				type="ROW"
@@ -25,7 +25,7 @@ const IndexPage = (data) => {
             __html: queryManifesto.markdownRemark.html,
           }}
         ></div> */}
-				<h1>Bem-vindo</h1>
+				<h1>Bem-vindos</h1>
 				<div className="body">
 					<div className="container">
 						<div className="left-column">

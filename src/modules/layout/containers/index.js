@@ -15,7 +15,7 @@ const LayoutResolver = ({
 	function renderComponent(renderThis) {
 		switch (renderThis) {
 			case 'BODY':
-				return <BodyContainer children={children} />
+				return <BodyContainer children={children} opt={opt} />
 			case 'FOOTER':
 				return <FooterContainer />
 			case 'HEADER':
