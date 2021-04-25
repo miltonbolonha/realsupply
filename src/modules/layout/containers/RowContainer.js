@@ -94,6 +94,7 @@ const RowContainer = ({
 								params={params}
 								opt={optNormatize}
 								bgOpt={bgOpt}
+								bgImg={opt.bgImg}
 							/>
 						</>
 					)

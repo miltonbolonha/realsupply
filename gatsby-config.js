@@ -1,10 +1,12 @@
 const path = require('path')
+const { credits } = require('./files-credits')
 
 module.exports = {
 	siteMetadata: {
 		title: 'Real Supply',
 		description: `Project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
 		author: `@MiltonBolonha`,
+		attrCredits: { credits },
 	},
 	plugins: [
 		'gatsby-plugin-sass',

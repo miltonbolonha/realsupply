@@ -1,15 +1,15 @@
 null {
-  z-index: 0;
-  undefined {
-    z-index: 1;
-    empty {
-      z-index: 2;
-    }
-  }
+	z-index: 0;
+	undefined {
+		z-index: 1;
+		empty {
+			z-index: 2;
+		}
+	}
 }
 
 // Colors
-$system__color: #0052cc;
+$system__color: #000080;
 $brand__color: #64fe0b;
 
 $cta__color: #eaff01;
@@ -22,7 +22,7 @@ $gradient_600__color: #d65926;
 $gradient_800__color: #9e2942;
 $gradient_999__color: #3e215c;
 
-$brand_black__color: #0c1f3f;
+$brand_black__color: #000080;
 $brand_white__color: #fff499;
 $black__color: #1c1c1c;
 
@@ -48,5 +48,5 @@ $light_brown__bgColor: #e8bb9e;
 $dark_brown__bgColor: #2f1a0c;
 
 .row_color__Additional {
-  background-color: $additional__color;
+	background-color: $additional__color;
 }

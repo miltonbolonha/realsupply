@@ -162,11 +162,8 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					<div className="footer-header-columns">
 						<p>
 							<strong>
-								<a
-									href="http://localhost:8000/manifesto/manifesto-versionado/"
-									className="cart-link"
-								>
-									Link{` `}
+								<a href="/credits/image-credits/" className="cart-link">
+									Créditos{` `}
 								</a>
 							</strong>
 						</p>

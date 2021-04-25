@@ -1,7 +1,7 @@
 import { React } from '../dependencies'
 import InsertHTML from '../../../tools/InsertHTML'
 
-const Row = ({ children, params, opt, bgOpt }) => (
+const Row = ({ children, params, opt, bgOpt, bgImg }) => (
 	<>
 		<InsertHTML
 			type="row"
@@ -9,6 +9,7 @@ const Row = ({ children, params, opt, bgOpt }) => (
 			opt={opt}
 			children={children}
 			bgOpt={bgOpt}
+			bgImg={bgImg}
 		/>
 	</>
 )

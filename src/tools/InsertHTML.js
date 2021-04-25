@@ -1,8 +1,9 @@
 import { React } from './dependencies'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 import slugify from './slugify'
 
-const InsertHTML = ({ type, params, opt, children, bgOpt }) => {
+const InsertHTML = ({ type, params, opt, children, bgOpt, bgImg }) => {
 	const elementClass = opt ? opt.elementClass : type
 
 	switch (type) {
@@ -96,7 +97,8 @@ const InsertHTML = ({ type, params, opt, children, bgOpt }) => {
 						)
 					case 'divisor':
 						// console.log('bgOpt.theme_colors')
-						// console.log(elementClass)
+						// console.log(bgImg.datas || null)
+						const refImage = bgImg ? getImage(bgImg.datas) : null
 						return (
 							<div
 								className={`${rowWidth} ${elementClass} align-to-${
@@ -108,8 +110,30 @@ const InsertHTML = ({ type, params, opt, children, bgOpt }) => {
 									backgroundColor: bgOpt.theme_color
 										? bgOpt.value_bgColor
 										: null,
+									backgroundImage: bgImg,
 								}}
 							>
+								{/* bgImg.alignTo==='top' ? {bottom:0} : {top:0}} */}
+								{/* {console.log(bgImg)} */}
+								{bgImg ? (
+									<GatsbyImage
+										image={bgImg.datas}
+										src={bgImg.datas.src}
+										srcSet={bgImg.datas.srcSet}
+										layout={'fullWidth'}
+										formats={['auto']}
+										alt="asd"
+										// style={
+										// 	!bgImg.alignTo
+										// 		? { objectPosition: 'top' }
+										// 		: { objectPosition: bgImg.alignTo }
+										// }
+										className="gatsbyImgHero"
+										imgClassName="imgHero"
+										objectPosition={!bgImg.alignTo ? 'top' : bgImg.alignTo}
+									/>
+								) : null}
+
 								{heading}
 								<SubRow
 									children={children}

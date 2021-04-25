@@ -1,20 +1,26 @@
 // import { graphql, useStaticQuery } from "gatsby"
 import React from 'react'
+import { graphql } from 'gatsby'
 
 import Layout from '@Layout'
 // import AtomicBlock from '@AtomicBlock'
 
-const IndexPage = (data) => {
+const IndexPage = ({ data }) => {
+	console.log(data.file.childImageSharp.gatsbyImageData.images.fallback.src)
 	return (
-		<Layout type="BODY" opt={{ titleSeo: 'homerzim' }}>
+		<Layout type="BODY" opt={{ titleSeo: 'Título maneiro' }}>
 			<Layout type="HEADER" />
 			<Layout
 				type="ROW"
 				opt={{
-					bgColor: '#d352cc',
-					isBoxed: true,
-					classes: 'light-content wrapper-overflow',
+					// bgColor: '#d352cc',
+					isBoxed: false,
+					classes: 'wrapper-overflow hero-cta',
 					alignTo: 'center',
+					bgImg: {
+						datas: data.file.childImageSharp.gatsbyImageData.images.fallback,
+						alignTo: 'center',
+					},
 				}}
 			>
 				{/* <AtomicBlock type="POPUP" querySelector="New Popup" /> */}
@@ -25,7 +31,23 @@ const IndexPage = (data) => {
             __html: queryManifesto.markdownRemark.html,
           }}
         ></div> */}
-				<h1>Bem-vindos</h1>
+
+				<a href="http://google.com" className="cta-link">
+					CTA ONE
+				</a>
+				<a href="http://google.com" className="cta-link dark">
+					Ligar
+				</a>
+			</Layout>
+			<Layout
+				type="ROW"
+				opt={{
+					// bgColor: '#d352cc',
+					isBoxed: true,
+					classes: 'wrapper-overflow',
+					alignTo: 'center',
+				}}
+			>
 				<div className="body">
 					<div className="container">
 						<div className="left-column">
@@ -114,5 +136,15 @@ const IndexPage = (data) => {
 		</Layout>
 	)
 }
+
+export const queryBg = graphql`
+	query heroBg {
+		file(name: { eq: "hero-img" }) {
+			childImageSharp {
+				gatsbyImageData
+			}
+		}
+	}
+`
 
 export default IndexPage
