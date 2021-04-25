@@ -2,7 +2,7 @@
 import React from 'react'
 
 import Layout from '@Layout'
-// import AtomicBlock from "@AtomicBlock"
+import AtomicBlock from '@AtomicBlock'
 
 const IndexPage = (data) => {
 	return (

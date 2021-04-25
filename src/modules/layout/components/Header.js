@@ -1,5 +1,5 @@
 import { React } from '../dependencies'
-import { FaBars } from 'react-icons/fa'
+import { FaAnchor } from 'react-icons/fa'
 import DarkMode from '../containers/darkmode'
 import MenuContainer from '../containers/MenuContainer'
 
@@ -14,7 +14,7 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 				/>
 				<label htmlFor="check-toggle-icon" className="menu-wrapper">
 					<div className="menu-bar-icon">
-						<FaBars className="FaBars" />
+						<FaAnchor className="FaAnchor" />
 					</div>
 					<div className="icon-text desktop-only">
 						<strong>Ferramentas</strong>
