@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
 					CTA ONE
 				</a>
 				<a href="http://google.com" className="cta-link dark">
-					Ligar
+					Ligar Aqui
 				</a>
 			</Layout>
 			<Layout
