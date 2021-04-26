@@ -78,6 +78,13 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-plugin-google-fonts`,
+			options: {
+				fonts: [`IM Fell English`, `Cantata One`, `Oswald`, `Josefin Sans`],
+				display: 'swap',
+			},
+		},
+		{
 			resolve: `gatsby-plugin-netlify`,
 			options: {
 				mergeSecurityHeaders: true, // boolean to turn off the default security headers
@@ -117,13 +124,6 @@ module.exports = {
 // 	options: {
 // 		name: `posts`,
 // 		path: `${__dirname}/posts`,
-// 	},
-// },
-// {
-// 	resolve: `gatsby-plugin-google-fonts`,
-// 	options: {
-// 		fonts: [`IM Fell English`, `Cantata One`, `Oswald`],
-// 		display: 'swap',
 // 	},
 // },
 // {

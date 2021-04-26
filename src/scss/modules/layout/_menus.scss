@@ -1,71 +1,71 @@
 header {
-  nav.main-nav {
-    position: fixed;
-    z-index: 9;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    visibility: hidden;
-    justify-content: space-around;
-    background-color: #000;
-    opacity: 0;
-    transition: visibility 0.2s, opacity 0.3s ease-in-out;
+	nav.main-nav {
+		position: fixed;
+		z-index: 9;
+		top: 75px;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		display: flex;
+		visibility: hidden;
+		justify-content: space-around;
+		background-color: #000;
+		opacity: 0;
+		transition: visibility 0.2s, opacity 0.3s ease-in-out;
 
-    &.menu-state-visible {
-      opacity: 1;
-      visibility: visible;
-    }
-    &.menu-state-not-visible {
-      opacity: 0;
-      visibility: hidden;
-    }
+		&.menu-state-visible {
+			opacity: 1;
+			visibility: visible;
+		}
+		&.menu-state-not-visible {
+			opacity: 0;
+			visibility: hidden;
+		}
 
-    @media (max-width: $tablet__size) {
-      flex-direction: column;
-      flex-wrap: wrap;
-      border-bottom: 1px solid $color__light-grey;
-      ul.nav-menus {
-        overflow: scroll;
-        padding: 0px;
+		@media (max-width: $tablet__size) {
+			flex-direction: column;
+			flex-wrap: wrap;
+			border-bottom: 1px solid $color__light-grey;
+			ul.nav-menus {
+				overflow: scroll;
+				padding: 0px;
 
-        li.nav-links {
-          text-align: center;
-          padding: 10px 0;
-          border-top: 1px solid $color__light-grey;
+				li.nav-links {
+					text-align: center;
+					padding: 10px 0;
+					border-top: 1px solid $color__light-grey;
 
-          &:first-of-type {
-            background-color: $color__light-grey;
-            line-height: 40px;
-            padding: 0;
+					&:first-of-type {
+						background-color: $color__light-grey;
+						line-height: 40px;
+						padding: 0;
 
-            a.nav-main-link {
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-  }
+						a.nav-main-link {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 ul.nav-menus,
 ul.footer-menu {
-  flex: 0 1 auto;
-  padding: 10px 0 40px;
+	flex: 0 1 auto;
+	padding: 10px 0 40px;
 
-  li.nav-links,
-  li.footer-links {
-    padding: 3px 0;
+	li.nav-links,
+	li.footer-links {
+		padding: 3px 0;
 
-    &:first-of-type {
-      a.nav-main-link,
-      a.footer-link {
-        font-weight: 900;
-        margin-bottom: 20px;
-        display: block;
-      }
-    }
-  }
+		&:first-of-type {
+			a.nav-main-link,
+			a.footer-link {
+				font-weight: 900;
+				margin-bottom: 20px;
+				display: block;
+			}
+		}
+	}
 }

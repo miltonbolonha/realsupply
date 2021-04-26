@@ -17,7 +17,7 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 						<FaAnchor className="FaAnchor" />
 					</div>
 					<div className="icon-text desktop-only">
-						<strong>Ferramentas</strong>
+						<small>Ferramentas</small>
 					</div>
 				</label>
 			</div>

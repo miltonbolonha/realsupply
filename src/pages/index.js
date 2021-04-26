@@ -1,6 +1,7 @@
 // import { graphql, useStaticQuery } from "gatsby"
 import React from 'react'
 import { graphql } from 'gatsby'
+import { FaWhatsapp } from 'react-icons/fa'
 
 import Layout from '@Layout'
 // import AtomicBlock from '@AtomicBlock'
@@ -32,9 +33,10 @@ const IndexPage = ({ data }) => {
         ></div> */}
 
 				<a href="http://google.com" className="cta-link">
-					CTA ONE
+					Cta One
 				</a>
 				<a href="http://google.com" className="cta-link dark">
+					<FaWhatsapp className="FaWhatsapp" />
 					Ligar Aqui
 				</a>
 			</Layout>

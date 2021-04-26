@@ -30,12 +30,13 @@ body {
 
 			.cta-link {
 				display: block;
-				padding: 10px 15px;
-				width: 230px;
+				padding: $cta__padding;
+				width: $cta__width;
 				font-size: $m__fontSize;
-				margin: 0 30px 10px;
-				border-radius: $s__radius;
-
+				margin: 10px 30px 0;
+				border-radius: $xs__radius;
+				font-family: $main__font;
+				line-height: $l__fontSize;
 				color: #fff;
 				background-color: $system__color;
 				font-weight: 900;

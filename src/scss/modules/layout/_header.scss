@@ -55,6 +55,9 @@ header {
 					justify-content: center;
 					align-items: center;
 					cursor: pointer;
+					font-family: $main__font;
+					color: white;
+					font-size: $xs__fontSize;
 
 					div.toggle-icon {
 						width: 30px;
