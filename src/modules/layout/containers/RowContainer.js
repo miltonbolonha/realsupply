@@ -77,6 +77,7 @@ const RowContainer = ({
 	const bgOpt = {
 		theme_color: defaultBgColor,
 		value_bgColor: opt.bgColor,
+		background: opt.bgImg,
 	}
 	// console.log(defaultBgColor)
 	return (

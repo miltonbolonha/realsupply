@@ -6,7 +6,6 @@ import Layout from '@Layout'
 // import AtomicBlock from '@AtomicBlock'
 
 const IndexPage = ({ data }) => {
-	console.log(data.file.childImageSharp.gatsbyImageData.images.fallback.src)
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Título maneiro' }}>
 			<Layout type="HEADER" />
@@ -18,7 +17,7 @@ const IndexPage = ({ data }) => {
 					classes: 'wrapper-overflow hero-cta',
 					alignTo: 'center',
 					bgImg: {
-						datas: data.file.childImageSharp.gatsbyImageData.images.fallback,
+						datas: data.file,
 						alignTo: 'center',
 					},
 				}}
