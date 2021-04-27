@@ -18,13 +18,31 @@ body {
 			display: flex;
 			margin-bottom: 50px; // xxxxx apagar
 			h2.lef-title {
-				writing-mode: vertical-rl;
-				transform: scale(-1, 1);
-				direction: rtl;
-				unicode-bidi: bidi-override;
+				writing-mode: vertical-lr;
+				text-orientation: upright;
+				font-size: 50px;
+				letter-spacing: -15px;
+				font-family: 'Oswald';
+				text-transform: uppercase;
+				color: $cta__color;
+				// direction: rtl;
+				font-weight: 900;
+				// unicode-bidi: bidi-override;
 			}
+
 			.box-content {
 				flex: 1 1 auto;
+				.main-title {
+					font-size: 38px;
+					color: $dark_brown__bgColor;
+				}
+				.commom-paragraph {
+					margin: 20px 10px;
+					color: $dark_brown__bgColor;
+					letter-spacing: initial;
+					text-align: justify;
+					text-align-last: center;
+				}
 			}
 		}
 	}

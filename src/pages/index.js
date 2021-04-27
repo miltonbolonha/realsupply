@@ -53,9 +53,15 @@ const IndexPage = ({ data }) => {
 				}}
 			>
 				<div className="left-highlight">
-					<h2 className="lef-title">Titulo 1</h2>
+					<h2 className="lef-title">Conheça</h2>
 					<div className="box-content">
-						<h3>Titulo dois</h3>
+						<h3 className="main-title">Titulo dois</h3>
+						<p className="commom-paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+							nihil provident sapiente ex, iusto, laborum sint hic voluptatem
+							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
+							Id pariatur voluptates voluptatum cumque.{' '}
+						</p>
 					</div>
 				</div>
 				<div className="body">
