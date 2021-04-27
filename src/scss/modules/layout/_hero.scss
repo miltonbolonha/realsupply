@@ -11,7 +11,19 @@
 		overflow: hidden;
 
 		justify-content: flex-end;
-		// z-index: -1;
+		box-shadow: $brown__insetShadowBox;
+
+		&:before {
+			background-color: $additionalDark__color;
+			position: absolute;
+			z-index: -1;
+			content: '';
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 
 		& > div {
 			align-self: flex-end;
@@ -26,7 +38,7 @@
 			line-height: $xl__fontSize;
 			text-shadow: 2px 2px 0px $light_brown__bgColor;
 
-			& span {
+			& span.cta-heading__italic {
 				font-style: italic;
 			}
 		}
@@ -46,6 +58,7 @@
 			color: $verylight_brown__bgColor;
 			background-color: $system__color;
 			font-weight: 900;
+			border: 3px solid transparent;
 			border-bottom: 3px solid $additionalDark__color;
 
 			&.dark {
@@ -57,7 +70,7 @@
 			&:hover {
 				background-color: $verylight_brown__bgColor;
 				color: $system__color;
-				border-bottom: 3px solid $additional__color;
+				border: 3px solid $secondary_golden_rod__color;
 			}
 
 			&:active {
@@ -73,7 +86,8 @@
 		width: 100%;
 		height: 100%;
 		// height: 300px;
-
+		// filter: opacity(0.5);
+		mix-blend-mode: screen;
 		// .imgHero {
 		// 	height: 100%;
 		// }

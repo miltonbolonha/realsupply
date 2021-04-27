@@ -69,6 +69,10 @@ header {
 					color: $btn_brown__not_active;
 					font-size: $xs__fontSize;
 
+					&:hover {
+						color: $secondary_golden_rod__color;
+					}
+
 					div.toggle-icon {
 						width: 30px;
 						margin: 0px 20px 0 5px;

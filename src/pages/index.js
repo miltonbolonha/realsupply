@@ -32,7 +32,8 @@ const IndexPage = ({ data }) => {
           }}
         ></div> */}
 				<h2 className="cta-heading">
-					Lorem ipsum sapi entei "<span>apsuum</span>" sa piente
+					Lorem ipsum sapi entei "
+					<span className="cta-heading__italic">apsuum</span>" sa piente
 				</h2>
 				<a href="http://google.com" className="cta-link">
 					Produtos
@@ -46,14 +47,16 @@ const IndexPage = ({ data }) => {
 				type="ROW"
 				opt={{
 					// bgColor: '#d352cc',
-					isBoxed: false,
+					isBoxed: true,
 					classes: 'wrapper-overflow',
 					alignTo: 'center',
 				}}
 			>
 				<div className="left-highlight">
-					<h2>Titulo 1</h2>
-					<h3>Titulo dois</h3>
+					<h2 className="lef-title">Titulo 1</h2>
+					<div className="box-content">
+						<h3>Titulo dois</h3>
+					</div>
 				</div>
 				<div className="body">
 					<div className="container">

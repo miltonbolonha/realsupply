@@ -1,6 +1,4 @@
 body {
-	background: white;
-
 	.wrapper-overflow {
 		// overflow-y: auto;
 		// height: 100%;
@@ -15,7 +13,19 @@ body {
 		// 	background-color: blue;
 		// }
 		.left-highlight {
-			background-color: red;
+			background-color: $verylight_brown__bgColor;
+			padding: 50px;
+			display: flex;
+			margin-bottom: 50px; // xxxxx apagar
+			h2.lef-title {
+				writing-mode: vertical-rl;
+				transform: scale(-1, 1);
+				direction: rtl;
+				unicode-bidi: bidi-override;
+			}
+			.box-content {
+				flex: 1 1 auto;
+			}
 		}
 	}
 }
