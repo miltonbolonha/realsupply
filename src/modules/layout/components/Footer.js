@@ -93,11 +93,6 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 									Link Item
 								</a>
 							</li>
-							<li className="footer-links">
-								<a href="https://google.com" className="footer-link">
-									© {new Date().getFullYear()}, Real Supply
-								</a>
-							</li>
 						</ul>
 					</div>
 					<div className="footer-columns">
@@ -119,16 +114,6 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 							</li>
 							<li className="footer-links">
 								<a href="https://google.com" className="footer-link">
-									Link Item
-								</a>
-							</li>
-							<li className="footer-links">
-								<a href="https://google.com" className="footer-link">
-									Link Item
-								</a>
-							</li>
-							<li className="footer-links">
-								<a href="https://google.com" className="footer-link">
 									Facebook
 								</a>
 							</li>
@@ -142,10 +127,16 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 									Instagram
 								</a>
 							</li>
+							<li className="footer-links">
+								<a href="https://google.com" className="footer-link">
+									© {new Date().getFullYear()}, Real Supply mudar
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</footer>
+			{/*
 			<div className="footer-menu-fixed-bottom">
 				<div className="footer-main-header">
 					<div className="footer-header-columns toggle-menu">
@@ -175,6 +166,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					handleRefState={handleRefState}
 				/>
 			</div>
+			 */}
 		</>
 	)
 }

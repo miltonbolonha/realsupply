@@ -1,32 +1,18 @@
 header {
 	font-size: 13px;
 	padding-bottom: $header__height;
-
-	// position: fixed;
-	// top: 0;
 	width: 100%;
 
 	div.main-header {
 		flex-direction: row;
 		flex-wrap: wrap;
-
+		border-top: 3px solid $additionalDark__color;
+		border-bottom: 3px solid $additionalDark__color;
 		background-color: $brand_black__color;
 		height: $header__height;
 		display: flex;
-
 		position: fixed;
 		width: 100%;
-
-		.active {
-			.icon-text {
-				margin: 0;
-				white-space: nowrap;
-				color: $btn_brown__active;
-			}
-			.icon-main-menu-left {
-				color: $btn_brown__active;
-			}
-		}
 
 		& > .header-columns {
 			vertical-align: middle;
@@ -47,11 +33,6 @@ header {
 			.contact-button {
 				font-size: $xs__fontSize;
 			}
-
-			// & > * {
-			// text-align: center;
-			// margin: 0;
-			// }
 		}
 
 		& > :nth-child(1) {
@@ -61,6 +42,17 @@ header {
 
 			&.toggle-menu {
 				position: relative;
+
+				.active {
+					.icon-text {
+						margin: 0;
+						white-space: nowrap;
+						color: $btn_brown__active;
+					}
+					.icon-main-menu-left {
+						color: $btn_brown__active;
+					}
+				}
 
 				input#check-toggle-icon {
 					display: none;
