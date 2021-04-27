@@ -31,13 +31,15 @@ const IndexPage = ({ data }) => {
             __html: queryManifesto.markdownRemark.html,
           }}
         ></div> */}
-
+				<h2 className="cta-heading">
+					Lorem ipsum sapi entei "<span>apsuum</span>" sa piente
+				</h2>
 				<a href="http://google.com" className="cta-link">
-					Cta One
+					Produtos
 				</a>
 				<a href="http://google.com" className="cta-link dark">
-					<FaWhatsapp className="FaWhatsapp" />
 					Ligar Aqui
+					<FaWhatsapp className="FaWhatsapp" />
 				</a>
 			</Layout>
 			<Layout
@@ -52,20 +54,7 @@ const IndexPage = ({ data }) => {
 				<div className="body">
 					<div className="container">
 						<div className="left-column">
-							<div>
-								{/* <img src="" alt=""/> */}
-								<h2>Titulo 1</h2>
-								<h3>Titulo dois</h3>
-								{/* <img src="" alt=""/> */}
-								<h2>Titulo 1</h2>
-								<h3>Titulo dois</h3>
-								{/* <img src="" alt=""/> */}
-								<h2>Titulo 1</h2>
-								<h3>Titulo dois</h3>
-								{/* <img src="" alt=""/> */}
-								<h2>Titulo 1</h2>
-								<h3>Titulo dois</h3>
-								{/* <img src="" alt=""/> */}
+							<div className="">
 								<h2>Titulo 1</h2>
 								<h3>Titulo dois</h3>
 							</div>

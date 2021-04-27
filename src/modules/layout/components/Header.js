@@ -1,5 +1,5 @@
 import { React } from '../dependencies'
-import { FaAnchor } from 'react-icons/fa'
+import { FaToolbox } from 'react-icons/fa'
 // import DarkMode from '../containers/darkmode'
 import MenuContainer from '../containers/MenuContainer'
 
@@ -12,12 +12,15 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 					id="check-toggle-icon"
 					onChange={handleRefState}
 				/>
-				<label htmlFor="check-toggle-icon" className="menu-wrapper">
+				<label
+					htmlFor="check-toggle-icon"
+					className={`menu-wrapper ${refState ? 'active' : 'not-active'}`}
+				>
 					<div className="menu-bar-icon">
-						<FaAnchor className="FaAnchor" />
+						<FaToolbox className="FaToolbox" />
 					</div>
 					<div className="icon-text desktop-only">
-						<small>Ferramentas</small>
+						<strong>Suprimentos</strong>
 					</div>
 				</label>
 			</div>
@@ -29,8 +32,8 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 			</div>
 			<div className="header-columns">
 				<strong>
-					<a href="/" className="cart-link">
-						Roteiro
+					<a href="/" className="contact-button">
+						Fale Conosco
 					</a>
 				</strong>
 				{/* <DarkMode darkCandleImg={darkCandleImg} /> */}

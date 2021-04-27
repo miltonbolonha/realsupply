@@ -27,8 +27,14 @@ header {
 				color: $cta__color;
 			}
 
-			.logo-link h1 {
+			.logo-link h1,
+			.contact-button {
 				color: $brand_white__color;
+				font-family: $main__font;
+			}
+
+			.contact-button {
+				font-size: $xs__fontSize;
 			}
 
 			// & > * {
@@ -56,6 +62,7 @@ header {
 					align-items: center;
 					cursor: pointer;
 					font-family: $main__font;
+					// font-family: 'Cantata One';
 					color: white;
 					font-size: $xs__fontSize;
 

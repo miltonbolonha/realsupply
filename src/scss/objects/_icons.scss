@@ -4,15 +4,29 @@
 	text-align: left;
 	width: 100%;
 
-	.FaAnchor {
-		color: #fff;
+	.FaToolbox {
+		// color: $brand_black__color;
 		height: 26px;
 		width: 26px;
 	}
 }
 
+.active {
+	.icon-text {
+		color: $cta__color;
+	}
+	.FaToolbox {
+		color: $cta__color;
+	}
+}
+
+.not-active {
+	.FaToolbox {
+		color: $brand_white__color;
+	}
+}
+
 .FaWhatsapp {
-	margin-right: 10px;
+	margin-right: 5px;
 	vertical-align: top;
-	margin-top: -2px;
 }
