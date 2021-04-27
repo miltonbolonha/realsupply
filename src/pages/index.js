@@ -46,19 +46,18 @@ const IndexPage = ({ data }) => {
 				type="ROW"
 				opt={{
 					// bgColor: '#d352cc',
-					isBoxed: true,
+					isBoxed: false,
 					classes: 'wrapper-overflow',
 					alignTo: 'center',
 				}}
 			>
+				<div className="left-highlight">
+					<h2>Titulo 1</h2>
+					<h3>Titulo dois</h3>
+				</div>
 				<div className="body">
 					<div className="container">
-						<div className="left-column">
-							<div className="">
-								<h2>Titulo 1</h2>
-								<h3>Titulo dois</h3>
-							</div>
-						</div>
+						<div className="left-column"></div>
 						<div className="right-column">
 							<div className="row-wrapper">
 								<div className="first-row">

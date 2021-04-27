@@ -17,6 +17,17 @@ header {
 		position: fixed;
 		width: 100%;
 
+		.active {
+			.icon-text {
+				margin: 0;
+				white-space: nowrap;
+				color: $btn_brown__active;
+			}
+			.icon-main-menu-left {
+				color: $btn_brown__active;
+			}
+		}
+
 		& > .header-columns {
 			vertical-align: middle;
 			display: flex;
@@ -29,7 +40,7 @@ header {
 
 			.logo-link h1,
 			.contact-button {
-				color: $brand_white__color;
+				color: $verylight_brown__bgColor;
 				font-family: $main__font;
 			}
 
@@ -63,7 +74,7 @@ header {
 					cursor: pointer;
 					font-family: $main__font;
 					// font-family: 'Cantata One';
-					color: white;
+					color: $btn_brown__not_active;
 					font-size: $xs__fontSize;
 
 					div.toggle-icon {
@@ -74,19 +85,6 @@ header {
 						@media (max-width: $tablet__size) {
 							margin: 0;
 						}
-
-						span.bar {
-							display: block;
-							width: 100%;
-							height: 3px;
-							margin-top: 3px;
-							border-radius: 2px;
-							background-color: #fff;
-						}
-					}
-					p.icon-text {
-						margin: 0;
-						white-space: nowrap;
 					}
 				}
 			}

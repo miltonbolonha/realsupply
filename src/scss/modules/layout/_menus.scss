@@ -1,4 +1,6 @@
 header {
+	box-shadow: $blue__shadowBox;
+
 	nav.main-nav {
 		position: fixed;
 		z-index: 9;
@@ -12,7 +14,7 @@ header {
 		background-color: $cta__color;
 		border-top: 3px solid $additional__color;
 		border-bottom: 3px solid $additional__color;
-		box-shadow: $xs__shadowBox;
+		box-shadow: $brown__shadowBox;
 		opacity: 0;
 		transition: visibility 0.2s, opacity 0.3s ease-in-out;
 		&:before {

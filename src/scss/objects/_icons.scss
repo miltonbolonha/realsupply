@@ -1,6 +1,7 @@
 .menu-bar-icon {
 	margin: 0px 20px 0 25px;
 	// float: left;
+
 	text-align: left;
 	width: 100%;
 
@@ -8,21 +9,6 @@
 		// color: $brand_black__color;
 		height: 26px;
 		width: 26px;
-	}
-}
-
-.active {
-	.icon-text {
-		color: $cta__color;
-	}
-	.FaToolbox {
-		color: $cta__color;
-	}
-}
-
-.not-active {
-	.FaToolbox {
-		color: $brand_white__color;
 	}
 }
 

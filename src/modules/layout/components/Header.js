@@ -17,7 +17,7 @@ const Header = ({ menuImg, Hero, refState, handleRefState, darkCandleImg }) => (
 					className={`menu-wrapper ${refState ? 'active' : 'not-active'}`}
 				>
 					<div className="menu-bar-icon">
-						<FaToolbox className="FaToolbox" />
+						<FaToolbox className="FaToolbox icon-main-menu-left" />
 					</div>
 					<div className="icon-text desktop-only">
 						<strong>Suprimentos</strong>

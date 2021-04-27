@@ -20,7 +20,7 @@
 
 		.cta-heading {
 			margin: 10px 30px 20px;
-			color: white;
+			color: $verylight_brown__bgColor;
 			width: 400px;
 			text-align: right;
 			line-height: $xl__fontSize;
@@ -32,7 +32,7 @@
 
 		.cta-link {
 			z-index: 1;
-
+			position: relative;
 			display: block;
 			padding: $cta__padding;
 			width: $cta__width;
@@ -41,7 +41,8 @@
 			border-radius: $xs__radius;
 			font-family: $main__font;
 			line-height: $l__fontSize;
-			color: #fff;
+			height: $l__fontSize;
+			color: $verylight_brown__bgColor;
 			background-color: $system__color;
 			font-weight: 900;
 			border-bottom: 3px solid $additionalDark__color;
@@ -53,8 +54,13 @@
 			}
 
 			&:hover {
-				background-color: $brand_white__color;
+				background-color: $verylight_brown__bgColor;
 				color: $system__color;
+				border-bottom: 3px solid $additional__color;
+			}
+
+			&:active {
+				top: 5px;
 			}
 		}
 	}
