@@ -9,7 +9,7 @@ import Layout from '@Layout'
 const IndexPage = ({ data }) => {
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Título maneiro' }}>
-			<Layout type="HEADER" />
+			<Layout type="HEADER" logo={data.realLogo} />
 			<Layout
 				type="ROW"
 				opt={{
@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
 					classes: 'wrapper-overflow hero-cta',
 					alignTo: 'center',
 					bgImg: {
-						datas: data.file,
+						datas: data.heroImg,
 						alignTo: 'center',
 					},
 				}}
@@ -53,7 +53,7 @@ const IndexPage = ({ data }) => {
 				}}
 			>
 				<div className="left-highlight">
-					<h2 className="lef-title">Conheça</h2>
+					<h2 className="lef-title desktop-only">Conheça</h2>
 					<div className="box-content">
 						<h3 className="main-title">Titulo dois</h3>
 						<p className="commom-paragraph">
@@ -137,7 +137,12 @@ const IndexPage = ({ data }) => {
 
 export const queryBg = graphql`
 	query heroBg {
-		file(name: { eq: "hero-img" }) {
+		heroImg: file(name: { eq: "hero-img" }) {
+			childImageSharp {
+				gatsbyImageData
+			}
+		}
+		realLogo: file(name: { eq: "real-supply-svg" }) {
 			childImageSharp {
 				gatsbyImageData
 			}

@@ -30,6 +30,11 @@ header {
 				font-family: $main__font;
 			}
 
+			.logo-link .newClass img {
+				opacity: 1;
+				object-fit: contain;
+			}
+
 			.contact-button {
 				font-size: $xs__fontSize;
 			}

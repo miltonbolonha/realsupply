@@ -11,6 +11,7 @@ const LayoutResolver = ({
 	querySelector,
 	sectionTitle,
 	setLocation,
+	logo,
 }) => {
 	function renderComponent(renderThis) {
 		switch (renderThis) {
@@ -19,7 +20,7 @@ const LayoutResolver = ({
 			case 'FOOTER':
 				return <FooterContainer />
 			case 'HEADER':
-				return <HeaderContainer data={opt} />
+				return <HeaderContainer heroData={opt} logo={logo} />
 			case 'ROW':
 				return (
 					<RowContainer

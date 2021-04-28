@@ -4,13 +4,18 @@ import { React, useState } from '../dependencies'
 
 import Header from '../components/Header'
 
-const HeaderContainer = ({ data }) => {
+const HeaderContainer = ({ heroData, logo }) => {
 	const [refState, setRefState] = useState(false)
 	function handleRefState() {
 		setRefState(!refState)
 	}
 	return (
-		<Header Hero={data} refState={refState} handleRefState={handleRefState} />
+		<Header
+			logo={logo}
+			Hero={heroData}
+			refState={refState}
+			handleRefState={handleRefState}
+		/>
 	)
 }
 export default HeaderContainer

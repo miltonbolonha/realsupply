@@ -74,13 +74,19 @@ module.exports = {
 				background_color: `#040508`,
 				theme_color: `#282a36`,
 				display: `fullscreen`,
-				icon: `${__dirname}/static/assets/images/realsupply-favicon.png`, // This path is relative to the root of the site.
+				icon: `${__dirname}/static/assets/images/real-supply-crown.png`, // This path is relative to the root of the site.
 			},
 		},
 		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {
-				fonts: [`IM Fell English`, `Cantata One`, `Oswald`, `Josefin Sans`],
+				fonts: [
+					`IM Fell English`,
+					`Cantata One`,
+					`Oswald`,
+					`Josefin Sans`,
+					`Coda:800`,
+				],
 				display: 'swap',
 			},
 		},
