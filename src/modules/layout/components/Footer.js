@@ -136,8 +136,8 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					</div>
 				</div>
 			</footer>
-			{/*
-			<div className="footer-menu-fixed-bottom">
+
+			<div className="footer-menu-fixed-bottom mobile-only">
 				<div className="footer-main-header">
 					<div className="footer-header-columns toggle-menu">
 						<input
@@ -145,8 +145,11 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 							id="footer-check-toggle-icon"
 							onChange={handleRefState}
 						/>
-						<label htmlFor="footer-check-toggle-icon" className="menu-wrapper">
-							aqui
+						<label
+							htmlFor="footer-check-toggle-icon"
+							className="menu-wrapper contact-button"
+						>
+							<strong>Suprimentos</strong>
 						</label>
 					</div>
 
@@ -154,7 +157,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 						<p>
 							<strong>
 								<a href="/credits/image-credits/" className="cart-link">
-									Créditos{` `}
+									<strong className="contact-button"> Fale Conosco{` `}</strong>
 								</a>
 							</strong>
 						</p>
@@ -166,7 +169,6 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					handleRefState={handleRefState}
 				/>
 			</div>
-			 */}
 		</>
 	)
 }

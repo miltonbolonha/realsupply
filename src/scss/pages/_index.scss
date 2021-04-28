@@ -1,12 +1,18 @@
 body {
 	.wrapper-overflow {
+		// width: 100%;
+
+		.second-row {
+			padding: $xl__space 0;
+			margin: 0;
+			width: 100%;
+		}
 		// overflow-y: auto;
 		// height: 100%;
 		// margin-top: 75px;
 		// margin-bottom: 75px;
 		// position: fixed;
 		// top: 75px;
-		width: 100%;
 		// background-color: red;
 
 		// .boxed-column-child {
@@ -14,7 +20,7 @@ body {
 		// }
 		.left-highlight {
 			background-color: $verylight_brown__bgColor;
-			padding: 50px;
+			padding: $xl__space;
 			display: flex;
 			margin-bottom: 50px; // xxxxx apagar
 			h2.lef-title {

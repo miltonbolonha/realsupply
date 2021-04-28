@@ -19,7 +19,7 @@ const Header = ({
 	return (
 		<header>
 			<div className="main-header">
-				<div className="header-columns toggle-menu">
+				<div className="header-columns toggle-menu desktop-only">
 					<input
 						type="checkbox"
 						id="check-toggle-icon"
@@ -68,7 +68,7 @@ const Header = ({
 						{/* <h1>Real Supply</h1> */}
 					</a>
 				</div>
-				<div className="header-columns">
+				<div className="header-columns desktop-only">
 					<strong>
 						<a href="/" className="contact-button">
 							Fale Conosco
