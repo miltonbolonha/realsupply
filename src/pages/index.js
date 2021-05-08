@@ -1,12 +1,21 @@
 // import { graphql, useStaticQuery } from "gatsby"
 import React from 'react'
 import { graphql } from 'gatsby'
-import { FaWhatsapp } from 'react-icons/fa'
+import {
+	FaWhatsapp,
+	FaShip,
+	FaShippingFast,
+	FaHospitalSymbol,
+	FaTools,
+} from 'react-icons/fa'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '@Layout'
-// import AtomicBlock from '@AtomicBlock'
 
 const IndexPage = ({ data }) => {
+	function changeBackground(e) {
+		e.target.style.background = 'red'
+	}
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Inicial' }}>
 			<Layout type="HEADER" logo={data.realLogo} />
@@ -23,14 +32,6 @@ const IndexPage = ({ data }) => {
 					},
 				}}
 			>
-				{/* <AtomicBlock type="POPUP" querySelector="New Popup" /> */}
-
-				{/* <div
-          className="index-main-container"
-          dangerouslySetInnerHTML={{
-            __html: queryManifesto.markdownRemark.html,
-          }}
-        ></div> */}
 				<h2 className="cta-heading">
 					Lorem ipsum sapi entei "
 					<span className="cta-heading__italic">apsuum</span>" sa piente
@@ -54,7 +55,7 @@ const IndexPage = ({ data }) => {
 				}}
 			>
 				<div className="left-highlight">
-					<h2 className="lef-title desktop-only">Conheça</h2>
+					<h3 className="left-title desktop-only">Conheça</h3>
 					<div className="box-content">
 						<h3 className="main-title">Titulo dois</h3>
 						<p className="commom-paragraph">
@@ -63,6 +64,24 @@ const IndexPage = ({ data }) => {
 							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
 							Id pariatur voluptates voluptatum cumque.{' '}
 						</p>
+						<div className="inside-highlights">
+							<h2 className="inside-title">Title little</h2>
+							{/* <FaToolbox className="FaToolbox icon-main-menu-left" /> */}
+							<FaShip className="FaHighlighIcon" />
+						</div>
+						<div className="inside-highlights">
+							<h2 className="inside-title">Navio</h2>
+							<FaShippingFast className="FaHighlighIcon" />
+							{/* <FaShip, FaShippingFast, FaHospitalSymbol, FaTools */}
+						</div>
+						<div className="inside-highlights">
+							<FaHospitalSymbol className="FaHighlighIcon" />
+							<h2 className="inside-title">Hospitalar</h2>
+						</div>
+						<div className="inside-highlights">
+							<FaTools className="FaHighlighIcon" />
+							<h2 className="inside-title">Title little</h2>
+						</div>
 					</div>
 				</div>
 			</Layout>
