@@ -159,18 +159,128 @@ const IndexPage = ({ data }) => {
 			>
 				<div className="second-row">
 					<div className="scene-main">
-						<h2 className="">SS</h2>
-						<p>loremmm</p>
-						<div className="scene-img">
+						<div className="scene-title">
 							<StaticImage
-								src="../../static/assets/images/hero-img.jpg"
+								src="../../static/assets/images/real-supply-crown.png"
 								alt="Real Supply"
-								// width={284}
+								width={150}
 								// height={60}
-								className="bg-inside-img"
-								style={{ objectFit: 'cover', width: '100%' }}
+								className="scene-logo"
+								style={{ objectFit: 'cover' }}
 							/>
+							<h2 className="scene-heading">Parceiros</h2>
+							<p className="scene-paragraph">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+								qui, aliquam obcaecati.
+							</p>
 						</div>
+						<div className="circle-path ">
+							<StaticImage
+								src="../../static/assets/images/porto.jpg"
+								alt="Real Supply"
+								width={800}
+								height={320}
+								className="circle-me"
+								style={{ objectFit: 'cover', zIndex: 1 }}
+							/>
+							{/* <StaticImage
+								src="../../static/assets/images/porto.jpg"
+								alt="Real Supply"
+								width={1200}
+								height={500}
+								className="circle-me blur"
+								style={{
+									objectFit: 'cover',
+									position: 'absolute',
+									zIndex: 0,
+									right: 0,
+								}}
+							/> */}
+						</div>
+
+						<div
+							className="clearFix"
+							style={{
+								content: '',
+								display: 'block',
+								clear: 'both',
+							}}
+						></div>
+					</div>
+					<div className="zerb">
+						<StaticImage
+							src="../../static/assets/images/real-supply-crown.png"
+							alt="Real Supply"
+							width={150}
+							// height={60}
+							className="scene-logo"
+							style={{ objectFit: 'cover' }}
+						/>
+
+						<StaticImage
+							src="../../static/assets/images/real-supply-crown.png"
+							alt="Real Supply"
+							width={150}
+							// height={60}
+							className="scene-logo"
+							style={{ objectFit: 'cover' }}
+						/>
+
+						<StaticImage
+							src="../../static/assets/images/real-supply-crown.png"
+							alt="Real Supply"
+							width={150}
+							// height={60}
+							className="scene-logo"
+							style={{ objectFit: 'cover' }}
+						/>
+
+						<StaticImage
+							src="../../static/assets/images/real-supply-crown.png"
+							alt="Real Supply"
+							width={150}
+							// height={60}
+							className="scene-logo"
+							style={{ objectFit: 'cover' }}
+						/>
+
+						<StaticImage
+							src="../../static/assets/images/real-supply-crown.png"
+							alt="Real Supply"
+							width={150}
+							// height={60}
+							className="scene-logo"
+							style={{ objectFit: 'cover' }}
+						/>
+					</div>
+				</div>
+			</Layout>
+
+			<Layout
+				type="ROW"
+				opt={{
+					// bgColor: '#d352cc',
+					isBoxed: true,
+					classes: 'wrapper-overflow',
+					alignTo: 'center',
+				}}
+			>
+				<div className="fisrt-row">
+					<h3 className="fisrt-title desktop-only">Contato</h3>
+					<div className="box-content">
+						<h3 className="main-title">Fale Conosco</h3>
+						<p className="commom-paragraph">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+							nihil provident sapiente ex, iusto, laborum sint hic voluptatem
+							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
+							Id pariatur voluptates voluptatum cumque.{' '}
+						</p>
+						<form action="#">
+							<input type="text" name="name" id="name" />
+							<input type="email" name="email" id="email" />
+							<textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+							<input type="button" value="Vai" />
+						</form>
 					</div>
 				</div>
 			</Layout>
@@ -186,11 +296,16 @@ export const queryBg = graphql`
 				gatsbyImageData
 			}
 		}
-		realLogo: file(name: { eq: "real-supply-svg" }) {
+		porto: file(name: { eq: "porto.jpg" }) {
 			childImageSharp {
 				gatsbyImageData
 			}
 		}
+		# realLogo: file(name: { eq: "real-supply-svg" }) {
+		# 	childImageSharp {
+		# 		gatsbyImageData
+		# 	}
+		# }
 	}
 `
 
