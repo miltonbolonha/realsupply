@@ -271,18 +271,12 @@ const IndexPage = ({ data }) => {
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
 							nihil provident sapiente ex, iusto, laborum sint hic voluptatem
 							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
-							Id pariatur voluptates voluptatum cumque.
+							Id pariatur voluptates voluptatum cumque.{' '}
 						</p>
 						<form action="#">
-							<label htmlFor="name">Nome: </label>
 							<input type="text" name="name" id="name" />
-							<br />
-							<label htmlFor="email">E-mail: </label>
 							<input type="email" name="email" id="email" />
-							<br />
-							<label htmlFor="msg">Mensagem: </label>
 							<textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-							<br />
 							<input type="button" value="Vai" />
 						</form>
 					</div>
@@ -292,5 +286,25 @@ const IndexPage = ({ data }) => {
 		</Layout>
 	)
 }
+
+export const queryBg = graphql`
+	query heroBg {
+		heroImg: file(name: { eq: "hero-img" }) {
+			childImageSharp {
+				gatsbyImageData
+			}
+		}
+		porto: file(name: { eq: "porto.jpg" }) {
+			childImageSharp {
+				gatsbyImageData
+			}
+		}
+		realLogo: file(name: { eq: "real-supply-svg" }) {
+			childImageSharp {
+				gatsbyImageData
+			}
+		}
+	}
+`
 
 export default IndexPage
