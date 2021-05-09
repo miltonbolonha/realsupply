@@ -37,10 +37,10 @@
 	&:hover {
 		.FaHighlighIcon {
 			filter: drop-shadow(3px 2px 0px $brand_black__color);
-			fill: $secondary_golden_rod__color;
+			// fill: $secondary_golden_rod__color;
 			filter: alpha(opacity=0);
 			opacity: 0;
-			right: 0;
+			right: 40px;
 		}
 	}
 }

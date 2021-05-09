@@ -54,8 +54,8 @@ const IndexPage = ({ data }) => {
 					alignTo: 'center',
 				}}
 			>
-				<div className="left-highlight">
-					<h3 className="left-title desktop-only">Conheça</h3>
+				<div className="fisrt-row">
+					<h3 className="fisrt-title desktop-only">Conheça</h3>
 					<div className="box-content">
 						<h3 className="main-title">Titulo dois</h3>
 						<p className="commom-paragraph">
@@ -65,22 +65,85 @@ const IndexPage = ({ data }) => {
 							Id pariatur voluptates voluptatum cumque.{' '}
 						</p>
 						<div className="inside-highlights">
-							<h2 className="inside-title">Title little</h2>
+							<h2 className="inside-title">Aqui título</h2>
 							{/* <FaToolbox className="FaToolbox icon-main-menu-left" /> */}
 							<FaShip className="FaHighlighIcon" />
+							<div className="bg-inside-highlight">
+								<StaticImage
+									src="../../static/assets/images/hero-img.jpg"
+									alt="Real Supply"
+									// width={284}
+									// height={60}
+									className="bg-inside-img"
+									style={{ objectFit: 'cover', width: '100%' }}
+								/>
+							</div>
+							<div className="marquee">
+								<p className="marquee-p">
+									Produto I Produto Outro Mais um Produto aqui Produto I Produto
+									Outro Mais um Produto aqui
+								</p>
+							</div>
 						</div>
 						<div className="inside-highlights">
-							<h2 className="inside-title">Navio</h2>
+							<h2 className="inside-title">Aqui título</h2>
 							<FaShippingFast className="FaHighlighIcon" />
-							{/* <FaShip, FaShippingFast, FaHospitalSymbol, FaTools */}
+							<div className="bg-inside-highlight">
+								<StaticImage
+									src="../../static/assets/images/hero-img.jpg"
+									alt="Real Supply"
+									// width={284}
+									// height={60}
+									className="bg-inside-img"
+									style={{ objectFit: 'cover', width: '100%' }}
+								/>
+							</div>
+							<div className="marquee">
+								<p className="marquee-p">
+									Produto I Produto Outro Mais um Produto aqui Produto I Produto
+									Outro Mais um Produto aqui
+								</p>
+							</div>
 						</div>
 						<div className="inside-highlights">
 							<FaHospitalSymbol className="FaHighlighIcon" />
-							<h2 className="inside-title">Hospitalar</h2>
+							<h2 className="inside-title">Aqui título</h2>
+							<div className="bg-inside-highlight">
+								<StaticImage
+									src="../../static/assets/images/hero-img.jpg"
+									alt="Real Supply"
+									// width={284}
+									// height={60}
+									className="bg-inside-img"
+									style={{ objectFit: 'cover', width: '100%' }}
+								/>
+							</div>
+							<div className="marquee">
+								<p className="marquee-p">
+									Produto I Produto Outro Mais um Produto aqui Produto I Produto
+									Outro Mais um Produto aqui
+								</p>
+							</div>
 						</div>
 						<div className="inside-highlights">
 							<FaTools className="FaHighlighIcon" />
-							<h2 className="inside-title">Title little</h2>
+							<h2 className="inside-title">Aqui título</h2>
+							<div className="bg-inside-highlight">
+								<StaticImage
+									src="../../static/assets/images/hero-img.jpg"
+									alt="Real Supply"
+									// width={284}
+									// height={60}
+									className="bg-inside-img"
+									style={{ objectFit: 'cover', width: '100%' }}
+								/>
+							</div>
+							<div className="marquee">
+								<p className="marquee-p">
+									Produto I Produto Outro Mais um Produto aqui Produto I Produto
+									Outro Mais um Produto aqui
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -89,14 +152,26 @@ const IndexPage = ({ data }) => {
 				type="ROW"
 				opt={{
 					bgColor: '#01071d',
-					isBoxed: true,
+					isBoxed: false,
 					classes: 'wrapper-overflow',
 					alignTo: 'center',
 				}}
 			>
 				<div className="second-row">
-					<h2 className="">SS</h2>
-					<p>loremmm</p>
+					<div className="scene-main">
+						<h2 className="">SS</h2>
+						<p>loremmm</p>
+						<div className="scene-img">
+							<StaticImage
+								src="../../static/assets/images/hero-img.jpg"
+								alt="Real Supply"
+								// width={284}
+								// height={60}
+								className="bg-inside-img"
+								style={{ objectFit: 'cover', width: '100%' }}
+							/>
+						</div>
+					</div>
 				</div>
 			</Layout>
 			<Layout type="FOOTER" />
