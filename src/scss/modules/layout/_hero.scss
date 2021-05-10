@@ -42,41 +42,6 @@
 				font-style: italic;
 			}
 		}
-
-		.cta-link {
-			z-index: 1;
-			position: relative;
-			display: block;
-			padding: $cta__padding;
-			width: $cta__width;
-			font-size: $m__fontSize;
-			margin: 10px 30px 10px;
-			border-radius: $xs__radius;
-			font-family: $main__font;
-			line-height: $l__fontSize;
-			height: $l__fontSize;
-			color: $verylight_brown__bgColor;
-			background-color: $system__color;
-			font-weight: 900;
-			border: 3px solid transparent;
-			border-bottom: 3px solid $additionalDark__color;
-
-			&.dark {
-				background-color: $cta__color;
-				color: $system__color;
-				border-bottom: 3px solid $additional__color;
-			}
-
-			&:hover {
-				background-color: $verylight_brown__bgColor;
-				color: $system__color;
-				border: 3px solid $secondary_golden_rod__color;
-			}
-
-			&:active {
-				top: 5px;
-			}
-		}
 	}
 
 	.gatsbyImgHero {

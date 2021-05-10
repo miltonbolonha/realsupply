@@ -273,11 +273,37 @@ const IndexPage = ({ data }) => {
 							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
 							Id pariatur voluptates voluptatum cumque.{' '}
 						</p>
-						<form action="#">
-							<input type="text" name="name" id="name" />
-							<input type="email" name="email" id="email" />
-							<textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-							<input type="button" value="Vai" />
+						<form action="#" className="contact-us">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								className="contact-us-name"
+								placeholder="Nome"
+							/>
+							<br />
+							<input
+								type="email"
+								name="email"
+								id="email"
+								className="contact-us-email"
+								placeholder="E-mail"
+							/>
+							<br />
+							<textarea
+								name="msg"
+								id="msg"
+								className="contact-us-msg"
+								cols="30"
+								rows="10"
+								placeholder="Mensagem"
+							></textarea>
+							<br />
+							<input
+								type="button"
+								value="Enviar"
+								className="contact-us-button"
+							/>
 						</form>
 					</div>
 				</div>
