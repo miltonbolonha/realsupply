@@ -41,7 +41,8 @@
 
 form.contact-us input.contact-us-button {
 	text-align: center;
-	border: 3px solid $additionalDark__color;
+	border: 3px solid $additional__color;
+	color: $additional__color;
 	background: $verylight_brown__bgColor;
 	border-radius: $s__radius;
 	cursor: pointer;
@@ -55,6 +56,7 @@ form.contact-us input.contact-us-button {
 
 	&:hover {
 		background: $additionalDark__color;
+		border: 3px solid $additionalDark__color;
 		color: $verylight_brown__bgColor;
 	}
 }

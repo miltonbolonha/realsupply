@@ -24,6 +24,7 @@ div.inside-highlights {
 		font-size: $h1__fontSize;
 		left: $xs__space;
 		color: $cta__color;
+		font-weight: 600;
 	}
 	&:hover h2.inside-title {
 		opacity: 0;
