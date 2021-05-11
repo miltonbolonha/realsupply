@@ -18,29 +18,23 @@
 }
 
 .FaHighlighIcon {
-	height: 44px;
-	width: 44px;
+	height: 54px;
+	width: 54px;
 	fill: $cta__color;
-	position: absolute;
-	right: 20px;
-	bottom: 10px;
-	filter: drop-shadow(3px 2px 0px $shadowColor);
+	// position: absolute;
+	// position: absolute;
+	// left: 0;
+	// right: 0;
+	// margin: 0 auto;
+	// top: -70px;
+	// right: 20px;
+	// bottom: 10px;
+	// filter: drop-shadow(3px 2px 0px $shadowColor);
 	transition: right 0.2s, opacity 0.2s;
 	&:before {
 		content: '';
 		position: absolute;
 		width: 100%;
 		// background-color: red;
-	}
-}
-.inside-highlights {
-	&:hover {
-		.FaHighlighIcon {
-			filter: drop-shadow(3px 2px 0px $brand_black__color);
-			// fill: $secondary_golden_rod__color;
-			filter: alpha(opacity=0);
-			opacity: 0;
-			right: 40px;
-		}
 	}
 }

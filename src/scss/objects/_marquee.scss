@@ -1,16 +1,17 @@
 div.marquee {
 	counter-reset: my-sec-counter;
-	height: 41px;
+	height: 60px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: 60px;
+
 	left: 0;
 	transition: opacity 0.2s;
 	// transition-delay: 0.2s;
 	mix-blend-mode: overlay;
 	opacity: 0;
-
+	border-radius: $xxl__radius;
 	p.marquee-p {
 		color: white;
 		font-size: 60px;

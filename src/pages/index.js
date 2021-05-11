@@ -54,8 +54,8 @@ const IndexPage = ({ data }) => {
 					alignTo: 'center',
 				}}
 			>
-				<div className="fisrt-row">
-					<h3 className="fisrt-title desktop-only">Conheça</h3>
+				<div className="first-row">
+					<h3 className="first-title desktop-only">Conheça</h3>
 					<div className="box-content">
 						<h3 className="main-title">Titulo dois</h3>
 						<p className="commom-paragraph">
@@ -64,85 +64,100 @@ const IndexPage = ({ data }) => {
 							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
 							Id pariatur voluptates voluptatum cumque.{' '}
 						</p>
-						<div className="inside-highlights">
-							<h2 className="inside-title">Aqui título</h2>
-							{/* <FaToolbox className="FaToolbox icon-main-menu-left" /> */}
-							<FaShip className="FaHighlighIcon" />
-							<div className="bg-inside-highlight">
-								<StaticImage
-									src="../../static/assets/images/hero-img.jpg"
-									alt="Real Supply"
-									// width={284}
-									// height={60}
-									className="bg-inside-img"
-									style={{ objectFit: 'cover', width: '100%' }}
-								/>
+						<div className="first-row-highlight">
+							<div className="inside-highlights">
+								<FaShip className="FaHighlighIcon zena" />
+								{/* <h2 className="inside-title">Aqui título</h2> */}
+								{/* <div className="bg-inside-highlight">
+									<StaticImage
+										src="../../static/assets/images/hero-img.jpg"
+										alt="Real Supply"
+										// width={284}
+										// height={60}
+										className="bg-inside-img"
+										style={{ objectFit: 'cover', width: '100%' }}
+									/>
+								</div> */}
+								{/* <p className="highlights-paragraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Necessitatibus neque delectus commodi ab.
+								</p> */}
+								{/* <div className="marquee">
+									<p className="marquee-p">
+										Produto I Produto Outro Mais um Produto aqui Produto I
+										Produto Outro Mais um Produto aqui
+									</p>
+								</div> */}
 							</div>
-							<div className="marquee">
-								<p className="marquee-p">
-									Produto I Produto Outro Mais um Produto aqui Produto I Produto
-									Outro Mais um Produto aqui
-								</p>
+							<div className="inside-highlights">
+								{/* <h2 className="inside-title">Aqui título</h2> */}
+								<FaShippingFast className="FaHighlighIcon zena" />
+								{/* <div className="bg-inside-highlight">
+									<StaticImage
+										src="../../static/assets/images/hero-img.jpg"
+										alt="Real Supply"
+										// width={284}
+										// height={60}
+										className="bg-inside-img"
+										style={{ objectFit: 'cover', width: '100%' }}
+									/>
+								</div> */}
+								{/* <p className="highlights-paragraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Necessitatibus neque delectus commodi ab.
+								</p> */}
+								{/* <div className="marquee">
+									<p className="marquee-p">
+										Produto I Produto Outro Mais um Produto aqui Produto I
+										Produto Outro Mais um Produto aqui
+									</p>
+								</div> */}
 							</div>
-						</div>
-						<div className="inside-highlights">
-							<h2 className="inside-title">Aqui título</h2>
-							<FaShippingFast className="FaHighlighIcon" />
-							<div className="bg-inside-highlight">
-								<StaticImage
-									src="../../static/assets/images/hero-img.jpg"
-									alt="Real Supply"
-									// width={284}
-									// height={60}
-									className="bg-inside-img"
-									style={{ objectFit: 'cover', width: '100%' }}
-								/>
+							<div className="inside-highlights">
+								<FaHospitalSymbol className="FaHighlighIcon zena" />
+								{/* <h2 className="inside-title">Aqui título</h2> */}
+								{/* <div className="bg-inside-highlight">
+									<StaticImage
+										src="../../static/assets/images/hero-img.jpg"
+										alt="Real Supply"
+										// width={284}
+										// height={60}
+										className="bg-inside-img"
+										style={{ objectFit: 'cover', width: '100%' }}
+									/>
+								</div> */}
+								{/* <p className="highlights-paragraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Necessitatibus neque delectus commodi ab.
+								</p> */}
+								{/* <div className="marquee">
+									<p className="marquee-p">
+										Produto I Produto Outro Mais um Produto aqui Produto I
+										Produto Outro Mais um Produto aqui
+									</p>
+								</div> */}
 							</div>
-							<div className="marquee">
-								<p className="marquee-p">
-									Produto I Produto Outro Mais um Produto aqui Produto I Produto
-									Outro Mais um Produto aqui
-								</p>
-							</div>
-						</div>
-						<div className="inside-highlights">
-							<FaHospitalSymbol className="FaHighlighIcon" />
-							<h2 className="inside-title">Aqui título</h2>
-							<div className="bg-inside-highlight">
-								<StaticImage
-									src="../../static/assets/images/hero-img.jpg"
-									alt="Real Supply"
-									// width={284}
-									// height={60}
-									className="bg-inside-img"
-									style={{ objectFit: 'cover', width: '100%' }}
-								/>
-							</div>
-							<div className="marquee">
-								<p className="marquee-p">
-									Produto I Produto Outro Mais um Produto aqui Produto I Produto
-									Outro Mais um Produto aqui
-								</p>
-							</div>
-						</div>
-						<div className="inside-highlights">
-							<FaTools className="FaHighlighIcon" />
-							<h2 className="inside-title">Aqui título</h2>
-							<div className="bg-inside-highlight">
-								<StaticImage
-									src="../../static/assets/images/hero-img.jpg"
-									alt="Real Supply"
-									// width={284}
-									// height={60}
-									className="bg-inside-img"
-									style={{ objectFit: 'cover', width: '100%' }}
-								/>
-							</div>
-							<div className="marquee">
-								<p className="marquee-p">
-									Produto I Produto Outro Mais um Produto aqui Produto I Produto
-									Outro Mais um Produto aqui
-								</p>
+							<div className="inside-highlights">
+								<FaTools className="FaHighlighIcon zena" />
+								{/* <h2 className="inside-title">Aqui título</h2> */}
+								{/* <div className="bg-inside-highlight">
+									<StaticImage
+										src="../../static/assets/images/hero-img.jpg"
+										alt="Real Supply"
+										className="bg-inside-img"
+										style={{ objectFit: 'cover', width: '100%' }}
+									/>
+								</div> */}
+								{/* <p className="highlights-paragraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Necessitatibus neque delectus commodi ab.
+								</p> */}
+								{/* <div className="marquee">
+									<p className="marquee-p">
+										Produto I Produto Outro Mais um Produto aqui Produto I
+										Produto Outro Mais um Produto aqui
+									</p>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -263,8 +278,8 @@ const IndexPage = ({ data }) => {
 					alignTo: 'center',
 				}}
 			>
-				<div className="fisrt-row">
-					<h3 className="fisrt-title desktop-only">Contato</h3>
+				<div className="first-row">
+					<h3 className="first-title desktop-only">Contato</h3>
 					<div className="box-content">
 						<h3 className="main-title">Fale Conosco</h3>
 						<p className="commom-paragraph">
