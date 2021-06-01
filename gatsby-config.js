@@ -77,15 +77,15 @@ module.exports = {
 				icon: `${__dirname}/static/assets/images/real-supply-crown.png`, // This path is relative to the root of the site.
 			},
 		},
-		{
-			resolve: '@ccalamos/gatsby-source-googlemaps-static',
-			options: {
-				key: process.env.NODE_ENV,
-				center: 'Rua Campos Salles, 601, Vila Assis, Sorocaba - SP',
-				size: `200x500`,
-				format: `jpg`,
-			},
-		},
+		// {
+		// 	resolve: '@ccalamos/gatsby-source-googlemaps-static',
+		// 	options: {
+		// 		key: process.env.NODE_ENV,
+		// 		center: 'Rua Campos Salles, 601, Vila Assis, Sorocaba - SP',
+		// 		size: `200x500`,
+		// 		format: `jpg`,
+		// 	},
+		// },
 		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {

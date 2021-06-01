@@ -294,29 +294,37 @@ const IndexPage = ({ data }) => {
 					<h3 className="first-title desktop-only">Contato</h3>
 					<div className="box-content">
 						<h3 className="main-title">Fale Conosco</h3>
-						<p className="commom-paragraph">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-							nihil provident sapiente ex, iusto, laborum sint hic voluptatem
-							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
-							Id pariatur voluptates voluptatum cumque.{' '}
-						</p>
+						<p className="commom-paragraph">Aqui. </p>
 						<form action="#" className="contact-us">
+							<label htmlFor="name" className="contact-label">
+								Nome:
+							</label>
+							<br />
 							<input
 								type="text"
 								name="name"
 								id="name"
 								className="contact-us-name"
-								placeholder="Nome"
+								placeholder="Nome Sobrenome"
 							/>
+							<br />
+							<label htmlFor="email" className="contact-label">
+								E-mail:
+							</label>
 							<br />
 							<input
 								type="email"
 								name="email"
 								id="email"
 								className="contact-us-email"
-								placeholder="E-mail"
+								placeholder="email@empresarial.com"
 							/>
 							<br />
+							<label htmlFor="msg" className="contact-label">
+								Mensagem:
+							</label>
+							<br />
+
 							<textarea
 								name="msg"
 								id="msg"
