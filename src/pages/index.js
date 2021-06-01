@@ -58,119 +58,23 @@ const IndexPage = ({ data }) => {
 				<div className="first-row">
 					<h3 className="first-title desktop-only">Conheça</h3>
 					<div className="box-content">
-						<h3 className="main-title">Suprimentos e Preços</h3>
+						<h3 className="main-title">Suprimento Sustentável</h3>
 						<p className="commom-paragraph">
 							A Real Supply é especialista em serviços de alojamento físico e
-							virtual. Bem como as vendas dos mesmos, dentro da cadeia nacional
-							de suprimentos diversos.
-						</p>{' '}
+							virtual. Bem como as administração do preço e das disponibilidades
+							de mercado dos mesmos, dentro da cadeia nacional de suprimentos.
+						</p>
 						<p className="commom-paragraph">
 							Nossos colaboradores são especialistas em administração de preços
 							e logística de suprimentos em dezenas de segmentos, tais como:
 							serviços diversos, suprimentos de laboratório, suprimentos para
-							indústria e materiais diversos.
-						</p>{' '}
+							indústria, suprimentos para navios e materiais diversos.
+						</p>
 						<p className="commom-paragraph">
 							A nossa estrutura é voltada para o atendimento eficiente das
 							necessidades de suprimento em alta demanda e segurança em compras
-							e entregas.{' '}
+							e entregas.
 						</p>
-						<div className="first-row-highlight">
-							<div className="inside-highlights">
-								<FaShip className="FaHighlighIcon zena" />
-								{/* <h2 className="inside-title">Aqui título</h2> */}
-								{/* <div className="bg-inside-highlight">
-									<StaticImage
-										src="../../static/assets/images/hero-img.jpg"
-										alt="Real Supply"
-										// width={284}
-										// height={60}
-										className="bg-inside-img"
-										style={{ objectFit: 'cover', width: '100%' }}
-									/>
-								</div> */}
-								{/* <p className="highlights-paragraph">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Necessitatibus neque delectus commodi ab.
-								</p> */}
-								{/* <div className="marquee">
-									<p className="marquee-p">
-										Produto I Produto Outro Mais um Produto aqui Produto I
-										Produto Outro Mais um Produto aqui
-									</p>
-								</div> */}
-							</div>
-							<div className="inside-highlights">
-								{/* <h2 className="inside-title">Aqui título</h2> */}
-								<FaShippingFast className="FaHighlighIcon zena" />
-								{/* <div className="bg-inside-highlight">
-									<StaticImage
-										src="../../static/assets/images/hero-img.jpg"
-										alt="Real Supply"
-										// width={284}
-										// height={60}
-										className="bg-inside-img"
-										style={{ objectFit: 'cover', width: '100%' }}
-									/>
-								</div> */}
-								{/* <p className="highlights-paragraph">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Necessitatibus neque delectus commodi ab.
-								</p> */}
-								{/* <div className="marquee">
-									<p className="marquee-p">
-										Produto I Produto Outro Mais um Produto aqui Produto I
-										Produto Outro Mais um Produto aqui
-									</p>
-								</div> */}
-							</div>
-							<div className="inside-highlights">
-								<FaHospitalSymbol className="FaHighlighIcon zena" />
-								{/* <h2 className="inside-title">Aqui título</h2> */}
-								{/* <div className="bg-inside-highlight">
-									<StaticImage
-										src="../../static/assets/images/hero-img.jpg"
-										alt="Real Supply"
-										// width={284}
-										// height={60}
-										className="bg-inside-img"
-										style={{ objectFit: 'cover', width: '100%' }}
-									/>
-								</div> */}
-								{/* <p className="highlights-paragraph">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Necessitatibus neque delectus commodi ab.
-								</p> */}
-								{/* <div className="marquee">
-									<p className="marquee-p">
-										Produto I Produto Outro Mais um Produto aqui Produto I
-										Produto Outro Mais um Produto aqui
-									</p>
-								</div> */}
-							</div>
-							<div className="inside-highlights">
-								<FaTools className="FaHighlighIcon zena" />
-								{/* <h2 className="inside-title">Aqui título</h2> */}
-								{/* <div className="bg-inside-highlight">
-									<StaticImage
-										src="../../static/assets/images/hero-img.jpg"
-										alt="Real Supply"
-										className="bg-inside-img"
-										style={{ objectFit: 'cover', width: '100%' }}
-									/>
-								</div> */}
-								{/* <p className="highlights-paragraph">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Necessitatibus neque delectus commodi ab.
-								</p> */}
-								{/* <div className="marquee">
-									<p className="marquee-p">
-										Produto I Produto Outro Mais um Produto aqui Produto I
-										Produto Outro Mais um Produto aqui
-									</p>
-								</div> */}
-							</div>
-						</div>
 					</div>
 				</div>
 			</Layout>

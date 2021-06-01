@@ -14,6 +14,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 			<footer>
 				<div className="social-icons">
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={instagram.childImageSharp.fixed}
               width={instagram.childImageSharp.fixed.width}
@@ -23,6 +24,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
             /> */}
 					</a>
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={facebook.childImageSharp.fixed}
               width={facebook.childImageSharp.fixed.width}
@@ -32,6 +34,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
             /> */}
 					</a>
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={linkedin.childImageSharp.fixed}
               width={linkedin.childImageSharp.fixed.width}
@@ -41,6 +44,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
             /> */}
 					</a>
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={pinterest.childImageSharp.fixed}
               width={pinterest.childImageSharp.fixed.width}
