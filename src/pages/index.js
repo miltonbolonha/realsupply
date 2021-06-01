@@ -365,13 +365,13 @@ export const queryBg = graphql`
 				gatsbyImageData
 			}
 		}
-		staticMap {
-			childFile {
-				childImageSharp {
-					gatsbyImageData(layout: FIXED)
-				}
-			}
-		}
+		# staticMap {
+		# 	childFile {
+		# 		childImageSharp {
+		# 			gatsbyImageData(layout: FIXED)
+		# 		}
+		# 	}
+		# }
 	}
 `
 
