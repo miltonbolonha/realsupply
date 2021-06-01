@@ -1,7 +1,7 @@
 import { React } from '../dependencies'
 import { FaToolbox } from 'react-icons/fa'
 // import DarkMode from '../containers/darkmode'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+// import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import MenuContainer from '../containers/MenuContainer'
 
 import { StaticImage } from 'gatsby-plugin-image'
@@ -14,7 +14,7 @@ const Header = ({
 	handleRefState,
 	darkCandleImg,
 }) => {
-	const refImage = getImage(logo)
+	// const refImage = getImage(logo)
 	console.log(logo)
 	return (
 		<header>

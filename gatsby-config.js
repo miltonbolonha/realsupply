@@ -78,6 +78,15 @@ module.exports = {
 			},
 		},
 		{
+			resolve: '@ccalamos/gatsby-source-googlemaps-static',
+			options: {
+				key: process.env.NODE_ENV,
+				center: 'Rua Campos Salles, 601, Vila Assis, Sorocaba - SP',
+				size: `200x500`,
+				format: `jpg`,
+			},
+		},
+		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {
 				fonts: [

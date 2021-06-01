@@ -13,9 +13,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '@Layout'
 
 const IndexPage = ({ data }) => {
-	function changeBackground(e) {
-		e.target.style.background = 'red'
-	}
+	// console.log(data.staticMap)
+	// function changeBackground(e) {
+	// 	e.target.style.background = 'red'
+	// }
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Inicial' }}>
 			<Layout type="HEADER" logo={data.realLogo} />
@@ -57,12 +58,22 @@ const IndexPage = ({ data }) => {
 				<div className="first-row">
 					<h3 className="first-title desktop-only">Conheça</h3>
 					<div className="box-content">
-						<h3 className="main-title">Titulo dois</h3>
+						<h3 className="main-title">Suprimentos e Preços</h3>
 						<p className="commom-paragraph">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-							nihil provident sapiente ex, iusto, laborum sint hic voluptatem
-							magni debitis doloribus, consequuntur reiciendis veritatis ipsum!
-							Id pariatur voluptates voluptatum cumque.{' '}
+							A Real Supply é especialista em serviços de alojamento físico e
+							virtual. Bem como as vendas dos mesmos, dentro da cadeia nacional
+							de suprimentos diversos.
+						</p>{' '}
+						<p className="commom-paragraph">
+							Nossos colaboradores são especialistas em administração de preços
+							e logística de suprimentos em dezenas de segmentos, tais como:
+							serviços diversos, suprimentos de laboratório, suprimentos para
+							indústria e materiais diversos.
+						</p>{' '}
+						<p className="commom-paragraph">
+							A nossa estrutura é voltada para o atendimento eficiente das
+							necessidades de suprimento em alta demanda e segurança em compras
+							e entregas.{' '}
 						</p>
 						<div className="first-row-highlight">
 							<div className="inside-highlights">
@@ -183,10 +194,11 @@ const IndexPage = ({ data }) => {
 								className="scene-logo"
 								style={{ objectFit: 'cover' }}
 							/>
-							<h2 className="scene-heading">Parceiros</h2>
-							<p className="scene-paragraph">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-								qui, aliquam obcaecati.
+							<h2 className="scene-heading">Parceiros e compliance</h2>
+							<p className="commom-paragraph scene-paragraph">
+								Mantemos um histórico rigoroso e ético dos nossos procedimentos
+								internos desde o dia um de todos os contratos da Real Supply.
+								Promovendo assim um mercado mais transparente.
 							</p>
 						</div>
 						<div className="circle-path ">
@@ -343,6 +355,13 @@ export const queryBg = graphql`
 		realLogo: file(name: { eq: "real-supply-svg" }) {
 			childImageSharp {
 				gatsbyImageData
+			}
+		}
+		staticMap {
+			childFile {
+				childImageSharp {
+					gatsbyImageData(layout: FIXED)
+				}
 			}
 		}
 	}
