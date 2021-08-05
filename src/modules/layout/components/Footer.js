@@ -55,11 +55,11 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					</a>
 				</div>
 				<div className="main-footer">
-					<div className="footer-columns">
+					{/* <div className="footer-columns">
 						<a href="https://google.com" className="footer-subscribe">
 							<strong>Torne-se um Membro</strong>
 						</a>
-					</div>
+					</div> */}
 					<div className="footer-columns">
 						<ul className="footer-menu">
 							<li className="footer-links">
@@ -140,7 +140,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					</div>
 				</div>
 			</footer>
-
+			{/*
 			<div className="footer-menu-fixed-bottom mobile-only">
 				<div className="footer-main-header">
 					<div className="footer-header-columns toggle-menu">
@@ -172,7 +172,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					refState={refState}
 					handleRefState={handleRefState}
 				/>
-			</div>
+			</div> */}
 		</>
 	)
 }

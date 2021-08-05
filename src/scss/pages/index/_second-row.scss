@@ -16,7 +16,9 @@
 			font-size: $s__fontSize;
 			// top: 50px;
 			// position: absolute;
-
+			@media (max-width: $tablet__size) {
+				max-width: 100%;
+			}
 			h2.scene-heading,
 			p.scene-paragraph {
 				color: white;

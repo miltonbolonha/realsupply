@@ -1,12 +1,14 @@
 // import { graphql, useStaticQuery } from "gatsby"
-import React from 'react'
+import React, { useState } from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
+
 import { graphql } from 'gatsby'
 import {
 	FaWhatsapp,
-	FaShip,
-	FaShippingFast,
-	FaHospitalSymbol,
-	FaTools,
+	// FaShip,
+	// FaShippingFast,
+	// FaHospitalSymbol,
+	// FaTools,
 } from 'react-icons/fa'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -17,6 +19,45 @@ const IndexPage = ({ data }) => {
 	// function changeBackground(e) {
 	// 	e.target.style.background = 'red'
 	// }
+
+	const [email, setEmail] = useState('')
+	const [honey, setHoney] = useState('')
+	const [mcRes, setMcRes] = useState('')
+	const [msg, setMsg] = useState('')
+	const [success, setSuccess] = useState('')
+	const handleMcRes = (msgReceived, resReceived) => {
+		setMcRes(resReceived)
+		handleMsg(msgReceived, resReceived)
+		handleSuccess(resReceived)
+	}
+	const handleMsg = (msgNow, resReceived) => {
+		let msgNull = null
+		if (resReceived === 'error') {
+			msgNull = 'E-mail inválido ou já cadastrado.'
+		}
+		if (resReceived === 'success') {
+			msgNull = 'Lembrete definido. Até logo!'
+		}
+		setMsg(msgNull)
+	}
+	const handleSuccess = (successNow) => {
+		setSuccess(successNow)
+	}
+
+	const handleEmailChange = (emailTyping) => {
+		setEmail(emailTyping)
+	}
+	const handleHoneypotChange = (honeyTyping) => {
+		setHoney(honeyTyping)
+	}
+	const handleSubmit = async (e, email, honey) => {
+		e.preventDefault()
+		honey ||
+			(await addToMailchimp(email).then(({ msg, result }) => {
+				handleMcRes(msg, result)
+			}))
+	}
+
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Inicial' }}>
 			<Layout type="HEADER" logo={data.realLogo} />
@@ -61,19 +102,19 @@ const IndexPage = ({ data }) => {
 						<h3 className="main-title">Suprimento Sustentável</h3>
 						<p className="commom-paragraph">
 							A Real Supply é especialista em serviços de alojamento físico e
-							virtual. Bem como as administração do preço e das disponibilidades
-							de mercado dos mesmos, dentro da cadeia nacional de suprimentos.
+							virtual. Bem como as administração e métricas dos preços e das
+							disponibilidades de mercado dos mesmos.
 						</p>
 						<p className="commom-paragraph">
-							Nossos colaboradores são especialistas em administração de preços
-							e logística de suprimentos em dezenas de segmentos, tais como:
+							Nossos colaboradores são treinados em administração de preços e
+							logística de suprimentos em dezenas de segmentos, tais como:
 							serviços diversos, suprimentos de laboratório, suprimentos para
 							indústria, suprimentos para navios e materiais diversos.
 						</p>
 						<p className="commom-paragraph">
-							A nossa estrutura é voltada para o atendimento eficiente das
-							necessidades de suprimento em alta demanda e segurança em compras
-							e entregas.
+							Somos voltados para o atendimento eficiente das necessidades de
+							requisições de suprimentos em alta demanda, segurança em compras e
+							entregas.
 						</p>
 					</div>
 				</div>
@@ -105,7 +146,7 @@ const IndexPage = ({ data }) => {
 								Promovendo assim um mercado mais transparente.
 							</p>
 						</div>
-						<div className="circle-path ">
+						<div className="circle-path desktop-only">
 							<StaticImage
 								src="../../static/assets/images/porto.jpg"
 								alt="Real Supply"
@@ -198,8 +239,16 @@ const IndexPage = ({ data }) => {
 					<h3 className="first-title desktop-only">Contato</h3>
 					<div className="box-content">
 						<h3 className="main-title">Fale Conosco</h3>
-						<p className="commom-paragraph">Aqui. </p>
-						<form action="#" className="contact-us">
+						{/* <p className="commom-paragraph">Aqui. </p> */}
+						<form
+							method="post"
+							id="mc-embedded-subscribe-form"
+							name="mc-embedded-subscribe-form"
+							target="_blank"
+							onSubmit={(e) => handleSubmit(e, email, honey)}
+							noValidate
+							className="contact-us validate"
+						>
 							<label htmlFor="name" className="contact-label">
 								Nome:
 							</label>
@@ -268,6 +317,8 @@ export const queryBg = graphql`
 			childImageSharp {
 				gatsbyImageData
 			}
+			extension
+			publicURL
 		}
 		# staticMap {
 		# 	childFile {
