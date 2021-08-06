@@ -15,7 +15,7 @@ const Header = ({
 	darkCandleImg,
 }) => {
 	// const refImage = getImage(logo)
-	console.log(logo)
+	// console.log(logo)
 	return (
 		<header>
 			<div className="main-header">

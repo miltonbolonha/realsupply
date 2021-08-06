@@ -3,6 +3,7 @@ import BodyContainer from '../containers/BodyContainer'
 import HeaderContainer from '../containers/HeaderContainer'
 import FooterContainer from '../containers/FooterContainer'
 import RowContainer from '../containers/RowContainer'
+import FormContainer from '../containers/FormContainer'
 
 const LayoutResolver = ({
 	children,
@@ -31,6 +32,8 @@ const LayoutResolver = ({
 						setLocation={setLocation}
 					/>
 				)
+			case 'FORM':
+				return <FormContainer heroData={opt} />
 			default:
 				return console.log(renderThis)
 		}

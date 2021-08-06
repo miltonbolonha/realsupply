@@ -1,6 +1,5 @@
 // import { graphql, useStaticQuery } from "gatsby"
-import React, { useState } from 'react'
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+import React from 'react'
 
 import { graphql } from 'gatsby'
 import {
@@ -19,44 +18,6 @@ const IndexPage = ({ data }) => {
 	// function changeBackground(e) {
 	// 	e.target.style.background = 'red'
 	// }
-
-	const [email, setEmail] = useState('')
-	const [honey, setHoney] = useState('')
-	const [mcRes, setMcRes] = useState('')
-	const [msg, setMsg] = useState('')
-	const [success, setSuccess] = useState('')
-	const handleMcRes = (msgReceived, resReceived) => {
-		setMcRes(resReceived)
-		handleMsg(msgReceived, resReceived)
-		handleSuccess(resReceived)
-	}
-	const handleMsg = (msgNow, resReceived) => {
-		let msgNull = null
-		if (resReceived === 'error') {
-			msgNull = 'E-mail inválido ou já cadastrado.'
-		}
-		if (resReceived === 'success') {
-			msgNull = 'Lembrete definido. Até logo!'
-		}
-		setMsg(msgNull)
-	}
-	const handleSuccess = (successNow) => {
-		setSuccess(successNow)
-	}
-
-	const handleEmailChange = (emailTyping) => {
-		setEmail(emailTyping)
-	}
-	const handleHoneypotChange = (honeyTyping) => {
-		setHoney(honeyTyping)
-	}
-	const handleSubmit = async (e, email, honey) => {
-		e.preventDefault()
-		honey ||
-			(await addToMailchimp(email).then(({ msg, result }) => {
-				handleMcRes(msg, result)
-			}))
-	}
 
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Inicial' }}>
@@ -239,60 +200,9 @@ const IndexPage = ({ data }) => {
 					<h3 className="first-title desktop-only">Contato</h3>
 					<div className="box-content">
 						<h3 className="main-title">Fale Conosco</h3>
-						{/* <p className="commom-paragraph">Aqui. </p> */}
-						<form
-							method="post"
-							id="mc-embedded-subscribe-form"
-							name="mc-embedded-subscribe-form"
-							target="_blank"
-							onSubmit={(e) => handleSubmit(e, email, honey)}
-							noValidate
-							className="contact-us validate"
-						>
-							<label htmlFor="name" className="contact-label">
-								Nome:
-							</label>
-							<br />
-							<input
-								type="text"
-								name="name"
-								id="name"
-								className="contact-us-name"
-								placeholder="Nome Sobrenome"
-							/>
-							<br />
-							<label htmlFor="email" className="contact-label">
-								E-mail:
-							</label>
-							<br />
-							<input
-								type="email"
-								name="email"
-								id="email"
-								className="contact-us-email"
-								placeholder="email@empresarial.com"
-							/>
-							<br />
-							<label htmlFor="msg" className="contact-label">
-								Mensagem:
-							</label>
-							<br />
 
-							<textarea
-								name="msg"
-								id="msg"
-								className="contact-us-msg"
-								cols="30"
-								rows="10"
-								placeholder="Mensagem"
-							></textarea>
-							<br />
-							<input
-								type="button"
-								value="Enviar"
-								className="contact-us-button"
-							/>
-						</form>
+						{/* <p className="commom-paragraph">Aqui. </p> */}
+						<Layout type="FORM" />
 					</div>
 				</div>
 			</Layout>
