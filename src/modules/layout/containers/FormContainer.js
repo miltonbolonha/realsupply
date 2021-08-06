@@ -62,7 +62,13 @@ const FormContainer = () => {
 				</p>
 			) : null}
 			{success !== 'success' ? (
-				<Form />
+				<Form
+					handleSubmit={handleSubmit}
+					email={email}
+					honey={honey}
+					handleHoneypotChange={handleHoneypotChange}
+					handleEmailChange={handleEmailChange}
+				/>
 			) : (
 				<>
 					<br />
