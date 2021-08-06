@@ -9,6 +9,7 @@ const FormContainer = () => {
 	const [mcRes, setMcRes] = useState('')
 	const [msg, setMsg] = useState('')
 	const [success, setSuccess] = useState('')
+	console.log(process.env.MAILCHIMP_ENDPOINT)
 	const handleMcRes = (msgReceived, resReceived) => {
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)
