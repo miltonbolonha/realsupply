@@ -8,6 +8,7 @@ const Form = ({
 	honey,
 	handleHoneypotChange,
 	handleEmailChange,
+	wrapperRefSecond,
 }) => {
 	return (
 		<>
@@ -19,6 +20,8 @@ const Form = ({
 				onSubmit={(e) => handleSubmit(e, email, honey)}
 				noValidate
 				className="contact-us validate"
+				ref={wrapperRefSecond}
+				data-netlify="true"
 			>
 				<p className="hidden">
 					<label>
@@ -75,7 +78,7 @@ const Form = ({
 				{honey || email === '' ? null : (
 					<>
 						<input
-							type="button"
+							type="submit"
 							value="Enviar"
 							className="contact-us-button"
 							name="subscribe"

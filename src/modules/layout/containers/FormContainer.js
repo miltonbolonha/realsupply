@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import Form from '../components/Form'
 // import { React } from '../dependencies'
@@ -9,13 +9,20 @@ const FormContainer = () => {
 	const [mcRes, setMcRes] = useState('')
 	const [msg, setMsg] = useState('')
 	const [success, setSuccess] = useState('')
+	const wrapperRefSecond = useRef(null)
+
 	console.log(process.env.MAILCHIMP_ENDPOINT)
 	const handleMcRes = (msgReceived, resReceived) => {
+		console.log(resReceived)
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)
 		handleSuccess(resReceived)
 	}
 	const handleMsg = (msgNow, resReceived) => {
+		console.log('msgNow: ')
+		console.log(msgNow)
+		console.log('resReceived: ')
+		console.log(resReceived)
 		let msgNull = null
 		if (resReceived === 'error') {
 			msgNull = 'E-mail inválido ou já cadastrado.'
@@ -30,17 +37,23 @@ const FormContainer = () => {
 	}
 
 	const handleEmailChange = (emailTyping) => {
-		console.log('emailTyping is: ')
-		console.log(emailTyping)
 		setEmail(emailTyping)
 	}
 	const handleHoneypotChange = (honeyTyping) => {
 		setHoney(honeyTyping)
 	}
 	const handleSubmit = async (e, email, honey) => {
+		alert('submitted')
+
 		e.preventDefault()
+		console.log('e: ')
+		console.log(e)
 		honey ||
-			(await addToMailchimp(email).then(({ msg, result }) => {
+			(await addToMailchimp(email, {
+				PATHNAME: '/fale-conosco',
+				FNAME: 'Nome',
+				LNAME: 'Sobrenome',
+			}).then(({ msg, result }) => {
 				handleMcRes(msg, result)
 			}))
 	}
@@ -54,6 +67,7 @@ const FormContainer = () => {
 		marginBottom: 0,
 		fontWeight: 900,
 	}
+	console.log(wrapperRefSecond)
 
 	return (
 		<>
@@ -69,6 +83,7 @@ const FormContainer = () => {
 					honey={honey}
 					handleHoneypotChange={handleHoneypotChange}
 					handleEmailChange={handleEmailChange}
+					wrapperRefSecond={wrapperRefSecond}
 				/>
 			) : (
 				<>
