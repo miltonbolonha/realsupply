@@ -1,6 +1,6 @@
 // import { graphql, useStaticQuery } from "gatsby"
 import React from 'react'
-
+import fetch from 'node-fetch'
 import { graphql } from 'gatsby'
 import {
 	FaWhatsapp,
