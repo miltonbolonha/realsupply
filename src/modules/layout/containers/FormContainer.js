@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import Form from '../components/Form'
+// import sgMail from '@sendgrid/mail'
 // import { React } from '../dependencies'
 
 const FormContainer = () => {
@@ -12,6 +13,7 @@ const FormContainer = () => {
 	const wrapperRefSecond = useRef(null)
 
 	console.log(process.env.MAILCHIMP_ENDPOINT)
+
 	const handleMcRes = (msgReceived, resReceived) => {
 		console.log(resReceived)
 		setMcRes(resReceived)
@@ -43,7 +45,7 @@ const FormContainer = () => {
 		setHoney(honeyTyping)
 	}
 	const handleSubmit = async (e, email, honey) => {
-		alert('submitted')
+		alert('submitting')
 
 		e.preventDefault()
 		console.log('e: ')
@@ -56,6 +58,27 @@ const FormContainer = () => {
 			}).then(({ msg, result }) => {
 				handleMcRes(msg, result)
 			}))
+
+		alert('MC submitted')
+		/*
+		sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+		const msg = {
+			to: 'vendas@realsupply.com.br', // Change to your recipient
+			from: 'vendas@realsupply.com.br', // Change to your verified sender
+			subject: 'Sending with SendGrid is Fun',
+			text: 'and easy to do anywhere, even with Node.js',
+			html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+		}
+		sgMail
+			.send(msg)
+			.then(() => {
+				console.log('Email sent')
+				alert('SG submitted')
+			})
+			.catch((error) => {
+				console.error(error)
+				alert('SG error')
+			})*/
 	}
 	const successHTMLstyle = {
 		color: 'green',

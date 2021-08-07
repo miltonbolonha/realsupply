@@ -1,0 +1,4 @@
+runtime: nodejs14
+
+env_variables:
+  MAILCHIMP_ENDPOINT: "https://gmail.us4.list-manage.com/subscribe/post?u=f73925424e8a366f624728296&amp;id=222390269b"
