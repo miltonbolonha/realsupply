@@ -11,7 +11,7 @@ exports.handler = async function (event, context) {
 		from: 'vendas@realsupply.com.br', // Change to your verified sender
 		subject: 'SITE: Nova Mensagem',
 		// text: 'Será que tá indo?',
-		html: '<strong>Eu não acredito que vai dar certo.</strong>',
+		html: '<strong>Zumba master test.</strong>',
 	}
 	switch (event.queryStringParameters.action) {
 		case 'SEND':

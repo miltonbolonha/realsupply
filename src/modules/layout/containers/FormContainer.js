@@ -5,6 +5,8 @@ import Form from '../components/Form'
 // import { React } from '../dependencies'
 import fetch from 'node-fetch'
 
+const { SgmModule } = require('./SgmModule')
+
 const FormContainer = () => {
 	const [email, setEmail] = useState('')
 	const [honey, setHoney] = useState('')
@@ -12,15 +14,11 @@ const FormContainer = () => {
 	const [msg, setMsg] = useState('')
 	const [success, setSuccess] = useState('')
 	const wrapperRefSecond = useRef(null)
-
+	SgmModule('SEND')
+	console.log('SEND CABOU DE ir')
 	console.log(process.env.MAILCHIMP_ENDPOINT)
 
-	const handleMcRes = async (msgReceived, resReceived) => {
-		console.log('... VAAAIIIII ... SendGrid Masterfullish')
-		fetch('/.netlify/functions/sgm?action=SEND')
-			.then((res) => res.text())
-			.then((text) => console.log(text))
-
+	const handleMcRes = (msgReceived, resReceived) => {
 		console.log(resReceived)
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)
