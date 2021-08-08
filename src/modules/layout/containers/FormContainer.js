@@ -20,12 +20,6 @@ const FormContainer = () => {
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)
 		handleSuccess(resReceived)
-		console.log('... initializating ... SendGrid Masterfullish')
-		console.log('↔ vai NETLIFY function agora!!')
-
-		fetch('/.netlify/functions/test?action=SEND')
-			.then((res) => res.text())
-			.then((text) => console.log(text))
 	}
 	const handleMsg = (msgNow, resReceived) => {
 		console.log('msgNow: ')
@@ -63,6 +57,10 @@ const FormContainer = () => {
 				FNAME: 'Nome',
 				LNAME: 'Sobrenome',
 			}).then(({ msg, result }) => {
+				console.log('... initializating ... SendGrid Masterfullish')
+				fetch('/.netlify/functions/test?action=SEND')
+					.then((res) => res.text())
+					.then((text) => console.log(text))
 				handleMcRes(msg, result)
 			}))
 
