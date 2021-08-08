@@ -17,9 +17,10 @@ const FormContainer = () => {
 
 	const handleMcRes = (msgReceived, resReceived) => {
 		console.log('... VAAAIIIII ... SendGrid Masterfullish')
-		fetch('/.netlify/functions/test?action=SEND')
+		fetch('/.netlify/functions/sgm?action=SEND')
 			.then((res) => res.text())
 			.then((text) => console.log(text))
+
 		console.log(resReceived)
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)

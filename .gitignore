@@ -6,4 +6,5 @@ public
 *.env.*
 
 # Local Netlify folder
-.netlify
+# .netlify
+# !/.netlify/functions/
