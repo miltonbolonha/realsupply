@@ -3,7 +3,7 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import Form from '../components/Form'
 // import sgMail from '@sendgrid/mail'
 // import { React } from '../dependencies'
-import fetch from 'node-fetch'
+// import fetch from 'node-fetch'
 
 const { SgmModule } = require('./SgmModule')
 
