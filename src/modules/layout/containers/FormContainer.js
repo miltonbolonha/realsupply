@@ -16,6 +16,10 @@ const FormContainer = () => {
 	console.log(process.env.MAILCHIMP_ENDPOINT)
 
 	const handleMcRes = (msgReceived, resReceived) => {
+		console.log('... VAAAIIIII ... SendGrid Masterfullish')
+		fetch('/.netlify/functions/test?action=SEND')
+			.then((res) => res.text())
+			.then((text) => console.log(text))
 		console.log(resReceived)
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)
@@ -57,10 +61,6 @@ const FormContainer = () => {
 				FNAME: 'Nome',
 				LNAME: 'Sobrenome',
 			}).then(({ msg, result }) => {
-				console.log('... initializating ... SendGrid Masterfullish')
-				fetch('/.netlify/functions/test?action=SEND')
-					.then((res) => res.text())
-					.then((text) => console.log(text))
 				handleMcRes(msg, result)
 			}))
 
