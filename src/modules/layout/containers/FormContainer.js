@@ -15,7 +15,7 @@ const FormContainer = () => {
 
 	console.log(process.env.MAILCHIMP_ENDPOINT)
 
-	const handleMcRes = (msgReceived, resReceived) => {
+	const handleMcRes = async (msgReceived, resReceived) => {
 		console.log('... VAAAIIIII ... SendGrid Masterfullish')
 		fetch('/.netlify/functions/sgm?action=SEND')
 			.then((res) => res.text())
