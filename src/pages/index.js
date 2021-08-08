@@ -1,6 +1,6 @@
 // import { graphql, useStaticQuery } from "gatsby"
 import React from 'react'
-import fetch from 'node-fetch'
+// import fetch from 'node-fetch'
 import { graphql } from 'gatsby'
 import {
 	FaWhatsapp,
@@ -18,12 +18,6 @@ const IndexPage = ({ data }) => {
 	// function changeBackground(e) {
 	// 	e.target.style.background = 'red'
 	// }
-
-	console.log('↔ vai NETLIFY function')
-
-	fetch('/.netlify/functions/test')
-		.then((res) => res.text())
-		.then((text) => console.log(text))
 
 	return (
 		<Layout type="BODY" opt={{ titleSeo: 'Inicial' }}>

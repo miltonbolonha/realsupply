@@ -3,6 +3,7 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 import Form from '../components/Form'
 // import sgMail from '@sendgrid/mail'
 // import { React } from '../dependencies'
+import fetch from 'node-fetch'
 
 const FormContainer = () => {
 	const [email, setEmail] = useState('')
@@ -19,6 +20,12 @@ const FormContainer = () => {
 		setMcRes(resReceived)
 		handleMsg(msgReceived, resReceived)
 		handleSuccess(resReceived)
+		console.log('... initializating ... SendGrid Masterfullish')
+		console.log('↔ vai NETLIFY function agora!!')
+
+		fetch('/.netlify/functions/test?action=SEND')
+			.then((res) => res.text())
+			.then((text) => console.log(text))
 	}
 	const handleMsg = (msgNow, resReceived) => {
 		console.log('msgNow: ')
@@ -45,9 +52,9 @@ const FormContainer = () => {
 		setHoney(honeyTyping)
 	}
 	const handleSubmit = async (e, email, honey) => {
+		e.preventDefault()
 		alert('submitting')
 
-		e.preventDefault()
 		console.log('e: ')
 		console.log(e)
 		honey ||
@@ -60,6 +67,7 @@ const FormContainer = () => {
 			}))
 
 		alert('MC submitted')
+
 		/*
 		sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 		const msg = {
