@@ -19,24 +19,7 @@ const Header = ({
 	return (
 		<header>
 			<div className="main-header">
-				<div className="header-columns toggle-menu desktop-only">
-					<input
-						type="checkbox"
-						id="check-toggle-icon"
-						onChange={handleRefState}
-					/>
-					<label
-						htmlFor="check-toggle-icon"
-						className={`menu-wrapper ${refState ? 'active' : 'not-active'}`}
-					>
-						<div className="menu-bar-icon">
-							<FaToolbox className="FaToolbox icon-main-menu-left" />
-						</div>
-						<div className="icon-text desktop-only">
-							<strong>Suprimentos</strong>
-						</div>
-					</label>
-				</div>
+				<div className="header-columns toggle-menu desktop-only"></div>
 
 				<div className="header-columns">
 					<a href="/" className="logo-link">
@@ -67,14 +50,6 @@ const Header = ({
 
 						{/* <h1>Real Supply</h1> */}
 					</a>
-				</div>
-				<div className="header-columns desktop-only">
-					<strong>
-						<a href="/" className="contact-button">
-							Fale Conosco
-						</a>
-					</strong>
-					{/* <DarkMode darkCandleImg={darkCandleImg} /> */}
 				</div>
 			</div>
 

@@ -36,13 +36,18 @@ const IndexPage = ({ data }) => {
 				}}
 			>
 				<h2 className="cta-heading">
-					Lorem ipsum sapi entei "
-					<span className="cta-heading__italic">apsuum</span>" sa piente
+					Suprimentos <span className="cta-heading__italic">em geral</span>
 				</h2>
-				<a href="http://google.com" className="cta-link">
+				{/* <a href="http://google.com" className="cta-link">
 					Produtos
-				</a>
-				<a href="http://google.com" className="cta-link dark">
+				</a> */}
+				<a
+					href="https://api.whatsapp.com/send?phone=5513997733547&text=Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es."
+					className="cta-link dark"
+					target="_blank"
+					nofollow
+					rel="noreferrer"
+				>
 					Ligar Aqui
 					<FaWhatsapp className="FaWhatsapp" />
 				</a>
@@ -140,73 +145,8 @@ const IndexPage = ({ data }) => {
 							}}
 						></div>
 					</div>
-					<div className="zerb">
-						<StaticImage
-							src="../../static/assets/images/real-supply-crown.png"
-							alt="Real Supply"
-							width={150}
-							// height={60}
-							className="scene-logo"
-							style={{ objectFit: 'cover' }}
-						/>
-
-						<StaticImage
-							src="../../static/assets/images/real-supply-crown.png"
-							alt="Real Supply"
-							width={150}
-							// height={60}
-							className="scene-logo"
-							style={{ objectFit: 'cover' }}
-						/>
-
-						<StaticImage
-							src="../../static/assets/images/real-supply-crown.png"
-							alt="Real Supply"
-							width={150}
-							// height={60}
-							className="scene-logo"
-							style={{ objectFit: 'cover' }}
-						/>
-
-						<StaticImage
-							src="../../static/assets/images/real-supply-crown.png"
-							alt="Real Supply"
-							width={150}
-							className="scene-logo"
-							style={{ objectFit: 'cover' }}
-						/>
-
-						<StaticImage
-							src="../../static/assets/images/real-supply-crown.png"
-							alt="Real Supply"
-							width={150}
-							className="scene-logo"
-							style={{ objectFit: 'cover' }}
-						/>
-					</div>
 				</div>
 			</Layout>
-
-			<Layout
-				type="ROW"
-				opt={{
-					// bgColor: '#d352cc',
-					isBoxed: true,
-					classes: 'wrapper-overflow',
-					alignTo: 'center',
-				}}
-			>
-				<div className="first-row">
-					<h3 className="first-title desktop-only">Contato</h3>
-					<div className="box-content">
-						<h3 className="main-title">Fale Conosco</h3>
-
-						{/* <p className="commom-paragraph">Aqui. </p> */}
-						<Layout type="FORM" />
-					</div>
-				</div>
-			</Layout>
-			<Layout type="FOOTER" />
 		</Layout>
 	)
 }
