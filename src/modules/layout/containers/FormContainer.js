@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+// import addToMailchimp from 'gatsby-plugin-mailchimp'
 import Form from '../components/Form'
 // import sgMail from '@sendgrid/mail'
 // import { React } from '../dependencies'
@@ -54,14 +54,14 @@ const FormContainer = () => {
 
 		console.log('e: ')
 		console.log(e)
-		honey ||
-			(await addToMailchimp(email, {
-				PATHNAME: '/fale-conosco',
-				FNAME: 'Nome',
-				LNAME: 'Sobrenome',
-			}).then(({ msg, result }) => {
-				handleMcRes(msg, result)
-			}))
+		// honey ||
+		// 	(await addToMailchimp(email, {
+		// 		PATHNAME: '/fale-conosco',
+		// 		FNAME: 'Nome',
+		// 		LNAME: 'Sobrenome',
+		// 	}).then(({ msg, result }) => {
+		// 		handleMcRes(msg, result)
+		// 	}))
 
 		alert('MC submitted')
 
