@@ -5,8 +5,8 @@ description: >-
   máquina e todos os seus dispositivos. Então, a partir dos estados a máquina é
   gerenciada.
 date: '2020-01-01'
-image: images/tappan-favicon.png
-category: milton
+# image: images/tappan-favicon.png
+category: post-category
 # rowHeading: identifier
 # headingOn: heading
 # location
@@ -18,7 +18,7 @@ category: milton
 # numberOfColumns
 ---
 
-# Milton Bolonha Neto
+# Bem-vindos
 
 <!--
   [identifier:"This is a row title"]
@@ -36,4 +36,12 @@ category: milton
   [specialDisplay:"false"]
 -->
 
-Pai, 33 anos, missionário mórmon retornado, produtor musical, designer, desenvolvedor web e de apps, filósofo, escritor, roteirista, humorista, motion designer, artista plástico, publicitário e engenheiro de software.
+lorem here
+
+## Titulo 1
+
+lorem here
+
+## Titulo dois
+
+lorem here

@@ -2,7 +2,7 @@ import { React } from '../dependencies'
 
 import LayoutContext, { LayoutProvider } from '@Layout/services/LayoutContext'
 import Row from '../components/Row'
-import { Page__Settings } from '../config/'
+// import { Page__Settings } from '../config/'
 // import useSetLocation from '@tools/useSetLocation'
 
 const RowContainer = ({
@@ -77,6 +77,7 @@ const RowContainer = ({
 	const bgOpt = {
 		theme_color: defaultBgColor,
 		value_bgColor: opt.bgColor,
+		background: opt.bgImg,
 	}
 	// console.log(defaultBgColor)
 	return (
@@ -94,6 +95,7 @@ const RowContainer = ({
 								params={params}
 								opt={optNormatize}
 								bgOpt={bgOpt}
+								bgImg={opt.bgImg}
 							/>
 						</>
 					)

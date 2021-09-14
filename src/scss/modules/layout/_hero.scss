@@ -1,0 +1,60 @@
+.wrapper-overflow {
+	&.hero-cta {
+		width: 100%;
+		height: 300px;
+		margin: 0;
+		padding: 0 0 50px 0;
+
+		display: flex;
+
+		position: relative;
+		overflow: hidden;
+
+		justify-content: flex-end;
+		box-shadow: $brown__insetShadowBox;
+
+		&:before {
+			background-color: $additionalDark__color;
+			position: absolute;
+			z-index: -1;
+			content: '';
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		& > div {
+			align-self: flex-end;
+			direction: rtl;
+		}
+
+		.cta-heading {
+			margin: 10px 30px 20px;
+			color: $verylight_brown__bgColor;
+			width: 400px;
+			text-align: right;
+			line-height: $xl__fontSize;
+			text-shadow: 2px 2px 0px $light_brown__bgColor;
+
+			& span.cta-heading__italic {
+				font-style: italic;
+			}
+		}
+	}
+
+	.gatsbyImgHero {
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		// height: 300px;
+		// filter: opacity(0.5);
+		mix-blend-mode: screen;
+		// .imgHero {
+		// 	height: 100%;
+		// }
+	}
+}

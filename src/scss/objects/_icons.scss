@@ -1,0 +1,40 @@
+.menu-bar-icon {
+	margin: 0px 20px 0 25px;
+	// float: left;
+
+	text-align: left;
+	width: 100%;
+
+	.FaToolbox {
+		// color: $brand_black__color;
+		height: 26px;
+		width: 26px;
+	}
+}
+
+.FaWhatsapp {
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+.FaHighlighIcon {
+	height: 54px;
+	width: 54px;
+	fill: $cta__color;
+	// position: absolute;
+	// position: absolute;
+	// left: 0;
+	// right: 0;
+	// margin: 0 auto;
+	// top: -70px;
+	// right: 20px;
+	// bottom: 10px;
+	// filter: drop-shadow(3px 2px 0px $shadowColor);
+	transition: right 0.2s, opacity 0.2s;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		// background-color: red;
+	}
+}

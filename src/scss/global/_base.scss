@@ -1,6 +1,11 @@
+::selection {
+	color: $cta__color;
+	background: $brand_black__color;
+}
 body {
-	background-color: white;
-	overflow-y: hidden;
+	background-color: $verylight_brown__bgColor;
+	// overflow-y: hidden;
+	cursor: default;
 	h1,
 	h2,
 	h3,
@@ -61,9 +66,9 @@ body.dark {
 		color: white;
 	}
 }
-.goldenbook {
-	font-family: 'goldenbook' !important;
-}
 a {
 	color: $additional__color;
+}
+p {
+	letter-spacing: normal;
 }

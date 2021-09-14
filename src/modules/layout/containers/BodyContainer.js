@@ -1,13 +1,20 @@
 // eslint-disable-next-line
 import { React, PropTypes } from '../dependencies.js'
 
+import SeoContainer from '../containers/SeoContainer'
 import GlobalContext from '../services/context'
 import Body from '../components/Body'
 
-const BodyContainer = ({ children }) => {
+const BodyContainer = ({ children, opt }) => {
 	return (
 		<GlobalContext.Consumer>
-			{(value) => <Body>{children}</Body>}
+			{(value) => (
+				<>
+					<SeoContainer title={opt.titleSeo} />
+
+					<Body opt={opt}>{children}</Body>
+				</>
+			)}
 		</GlobalContext.Consumer>
 	)
 }

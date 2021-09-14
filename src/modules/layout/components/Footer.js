@@ -1,5 +1,5 @@
 import { React } from '../dependencies'
-import { StaticImage } from 'gatsby-plugin-image'
+// import { StaticImage } from 'gatsby-plugin-image'
 import FooterMainMenuContainer from '../containers/FooterMainMenuContainer'
 
 const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
@@ -14,6 +14,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 			<footer>
 				<div className="social-icons">
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={instagram.childImageSharp.fixed}
               width={instagram.childImageSharp.fixed.width}
@@ -23,6 +24,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
             /> */}
 					</a>
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={facebook.childImageSharp.fixed}
               width={facebook.childImageSharp.fixed.width}
@@ -32,6 +34,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
             /> */}
 					</a>
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={linkedin.childImageSharp.fixed}
               width={linkedin.childImageSharp.fixed.width}
@@ -41,6 +44,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
             /> */}
 					</a>
 					<a href="https://google.com">
+						Face
 						{/* <Img
               fixed={pinterest.childImageSharp.fixed}
               width={pinterest.childImageSharp.fixed.width}
@@ -51,11 +55,11 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					</a>
 				</div>
 				<div className="main-footer">
-					<div className="footer-columns">
+					{/* <div className="footer-columns">
 						<a href="https://google.com" className="footer-subscribe">
 							<strong>Torne-se um Membro</strong>
 						</a>
-					</div>
+					</div> */}
 					<div className="footer-columns">
 						<ul className="footer-menu">
 							<li className="footer-links">
@@ -93,11 +97,6 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 									Link Item
 								</a>
 							</li>
-							<li className="footer-links">
-								<a href="https://google.com" className="footer-link">
-									© {new Date().getFullYear()}, Real Supply
-								</a>
-							</li>
 						</ul>
 					</div>
 					<div className="footer-columns">
@@ -119,16 +118,6 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 							</li>
 							<li className="footer-links">
 								<a href="https://google.com" className="footer-link">
-									Link Item
-								</a>
-							</li>
-							<li className="footer-links">
-								<a href="https://google.com" className="footer-link">
-									Link Item
-								</a>
-							</li>
-							<li className="footer-links">
-								<a href="https://google.com" className="footer-link">
 									Facebook
 								</a>
 							</li>
@@ -142,11 +131,17 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 									Instagram
 								</a>
 							</li>
+							<li className="footer-links">
+								<a href="https://google.com" className="footer-link">
+									© {new Date().getFullYear()}, Real Supply mudar
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</footer>
-			<div className="footer-menu-fixed-bottom">
+			{/*
+			<div className="footer-menu-fixed-bottom mobile-only">
 				<div className="footer-main-header">
 					<div className="footer-header-columns toggle-menu">
 						<input
@@ -154,19 +149,19 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 							id="footer-check-toggle-icon"
 							onChange={handleRefState}
 						/>
-						<label htmlFor="footer-check-toggle-icon" className="menu-wrapper">
-							aqui
+						<label
+							htmlFor="footer-check-toggle-icon"
+							className="menu-wrapper contact-button"
+						>
+							<strong>Suprimentos</strong>
 						</label>
 					</div>
 
 					<div className="footer-header-columns">
 						<p>
 							<strong>
-								<a
-									href="http://localhost:8000/manifesto/manifesto-versionado/"
-									className="cart-link"
-								>
-									Link{` `}
+								<a href="/credits/image-credits/" className="cart-link">
+									<strong className="contact-button"> Fale Conosco{` `}</strong>
 								</a>
 							</strong>
 						</p>
@@ -177,7 +172,7 @@ const Footer = ({ socialIcons, logoImg, refState, handleRefState }) => {
 					refState={refState}
 					handleRefState={handleRefState}
 				/>
-			</div>
+			</div> */}
 		</>
 	)
 }

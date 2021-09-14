@@ -1,29 +1,28 @@
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
+})
 const path = require('path')
+const { credits } = require('./files-credits')
 
 module.exports = {
 	siteMetadata: {
 		title: 'Real Supply',
 		description: `Project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
 		author: `@MiltonBolonha`,
+		attrCredits: { credits },
 	},
 	plugins: [
 		'gatsby-plugin-sass',
 		'gatsby-plugin-image',
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		// {
-		//   resolve: 'gatsby-source-filesystem',
-		//   options: {
-		//     name: 'images',
-		//     path: './src/images/',
-		//   },
-		//   __key: 'images',
-		// },
+		`gatsby-plugin-offline`,
+		// `gatsby-plugin-netlify-cms`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				name: `images`,
-				path: `${__dirname}/static/assets`,
+				name: `posts`,
+				path: `${__dirname}/posts`,
 			},
 		},
 		{
@@ -34,10 +33,24 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-source-filesystem`,
+			resolve: `gatsby-transformer-remark`,
 			options: {
-				name: `posts`,
-				path: `${__dirname}/posts`,
+				plugins: [
+					{
+						resolve: `gatsby-remark-relative-images`,
+						options: {
+							name: `uploads`,
+						},
+					},
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 695,
+							linkImagesToOriginal: false,
+						},
+					},
+					`gatsby-remark-lazy-load`,
+				],
 			},
 		},
 		{
@@ -56,10 +69,43 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				name: `BolonhaDev`,
+				short_name: `BolonhaDev`,
+				start_url: `/`,
+				background_color: `#040508`,
+				theme_color: `#282a36`,
+				display: `fullscreen`,
+				icon: `${__dirname}/static/assets/images/real-supply-crown.png`, // This path is relative to the root of the site.
+			},
+		},
+		// {
+		// 	resolve: '@ccalamos/gatsby-source-googlemaps-static',
+		// 	options: {
+		// 		key: process.env.NODE_ENV,
+		// 		center: 'Rua Campos Salles, 601, Vila Assis, Sorocaba - SP',
+		// 		size: `200x500`,
+		// 		format: `jpg`,
+		// 	},
+		// },
+		{
+			resolve: `gatsby-plugin-google-fonts`,
+			options: {
+				fonts: [
+					`IM Fell English`,
+					`Cantata One`,
+					`Oswald`,
+					`Josefin Sans`,
+					`Coda:800`,
+				],
+				display: 'swap',
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-mailchimp',
 			options: {
-				endpoint:
-					'https://gmail.us4.list-manage.com/subscribe/post?u=f73925424e8a366f624728296&amp;id=222390269b', // string; add your MC list endpoint here; see instructions below
+				endpoint: process.env.MAILCHIMP_ENDPOINT, // string; add your MC list endpoint here; see instructions below
 				timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
 			},
 		},
@@ -75,3 +121,41 @@ module.exports = {
 		},
 	],
 }
+
+// {
+//   resolve: 'gatsby-source-filesystem',
+//   options: {
+//     name: 'images',
+//     path: './src/images/',
+//   },
+//   __key: 'images',
+// },
+// {
+// 	resolve: `gatsby-source-filesystem`,
+// 	options: {
+// 		name: `images`,
+// 		path: `${__dirname}/static/assets`,
+// 	},
+// },
+// {
+// 	resolve: `gatsby-source-filesystem`,
+// 	options: {
+// 		name: `uploads`,
+// 		path: `${__dirname}/static/assets/images`,
+// 	},
+// },
+// {
+// 	resolve: `gatsby-source-filesystem`,
+// 	options: {
+// 		name: `posts`,
+// 		path: `${__dirname}/posts`,
+// 	},
+// },
+// {
+// 	resolve: 'gatsby-plugin-mailchimp',
+// 	options: {
+// 		endpoint:
+// 			'', // string; add your MC list endpoint here; see instructions below
+// 		timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+// 	},
+// },
